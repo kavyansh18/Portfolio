@@ -12,7 +12,9 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   darkMode: "class",
   theme: {
-    // rest of the code
+    scale: {
+      '40': '0.40',  // Custom scale of 40%
+    },
   },
   plugins: [
     addVariablesForColors,
