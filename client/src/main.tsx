@@ -1,10 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { Homepg } from './Pages/Homepg.tsx'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+import { Homepg } from './Pages/Homepg';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.render(
   <React.StrictMode>
-    <Homepg />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepg />} />
+        <Route path="/form" element={<Homepg />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
-)
+  document.getElementById("root")
+);

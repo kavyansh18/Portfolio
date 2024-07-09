@@ -1,12 +1,27 @@
+import { useEffect, useRef } from "react";
+
 const ToggleSwitch = () => {
-  const toggleDarkMode = () => {
-    document.documentElement.classList.toggle("dark");
-  };
+    const inputRef = useRef<HTMLInputElement | null>(null); 
+  
+    const toggleDarkMode = () => {
+      document.documentElement.classList.toggle("dark");
+    };
+  
+    useEffect(() => {
+      if (inputRef.current) {
+        inputRef.current.click(); 
+      }
+    }, [inputRef]);
 
   return (
     <div>
       <label className="absolute top-1 right-2 transform scale-40">
-        <input className="slider" type="checkbox" onClick={toggleDarkMode} />
+        <input
+          ref={inputRef}
+          className="slider"
+          type="checkbox"
+          onClick={toggleDarkMode}
+        />
         <div className="switch">
           <div className="suns"></div>
           <div className="moons">
