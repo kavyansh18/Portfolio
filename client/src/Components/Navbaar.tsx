@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbaar = () => {
   return (
-    <div className="w-full flex justify-center items-center z-10">
-    <div className="fixed top-6 flex gap-2 px-10 pb-2 rounded-full  hover:px-16 z-10 transition-all duration-950 ease-in-out backdrop-filter backdrop-blur-3xl bg-white bg-opacity-10">
+    <div className="w-full flex justify-center items-center z-50">
+    <div className="fixed top-6 flex gap-2 px-10 pb-2 rounded-full  hover:px-16 z-50 transition-all duration-950 ease-in-out backdrop-filter backdrop-blur-3xl bg-white bg-opacity-5">
       <div>
         <NavLink
           to="/"
