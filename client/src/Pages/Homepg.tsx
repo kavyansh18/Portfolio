@@ -4,6 +4,7 @@ import "../Components/UI/ToggleSwitch.css";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "../Components/UI/Hero-highlight.tsx";
 import Pfp from '../Components/Pfp.tsx';
+import down from "../assets/downarrow.svg"
 
 export function Homepg() {
   return (
@@ -35,6 +36,8 @@ export function Homepg() {
           <Highlight className="text-black dark:text-white mt-1">
             A FullStack Web Developer
           </Highlight>
+          <div className="w-full flex justify-center items-center mt-12">
+          <img className="w-[3rem]" src={down} alt="" /></div>
         </motion.h1>
       </HeroHighlight>
 
