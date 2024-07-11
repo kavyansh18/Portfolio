@@ -26,13 +26,13 @@ export function Homepg() {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="text-4xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto pb-[110px] relative z-1"
+          className="text-4xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto  "
         >
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mb-4">
             <Pfp />
           </div>
-          Hi, I'am Kavyansh <br></br>
-          <Highlight className="text-black dark:text-white">
+          <span className="bg-gradient-to-b from-slate-200 to-slate-600 text-transparent bg-clip-text">Hi, I'am Kavyansh </span><br></br>
+          <Highlight className="text-black dark:text-white mt-1">
             A FullStack Web Developer
           </Highlight>
         </motion.h1>
