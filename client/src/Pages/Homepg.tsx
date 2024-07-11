@@ -9,7 +9,7 @@ import { Sparkles } from "../Components/UI/Sparkles.tsx";
 
 export function Homepg() {
   return (
-    <div className=" h-[80rem]">
+    <div>
       <div className="z-50 ">
       <Navbaar />
       </div>
@@ -37,16 +37,16 @@ export function Homepg() {
           <Highlight className="text-black dark:text-white mt-1">
             A FullStack Web Developer
           </Highlight>
-          <div className="w-full flex justify-center items-center mt-12">
+          <div className="w-full flex justify-center items-center mt-11">
           <img className="w-[3rem]" src={down} alt="" /></div>
         </motion.h1>
 
       <div className="flex">
         <div>
-      <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20 ml-20 mt-8">
+      <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20 ml-20 mt-16">
         About me
       </h1>
-      <div className="w-[8.5rem] h-[36px] relative ml-24">
+      <div className="w-[8.5rem] h-[32px] relative ml-24">
         <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
         <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-3/4" />
         <Sparkles
