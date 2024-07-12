@@ -11,7 +11,21 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      // Extend your theme here
+      keyframes: {
+        bounce: {
+          '0%, 100%': {
+            transform: 'translateY(-18%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(25%)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+        },
+      },
+      animation: {
+        bounce: 'bounce 0.6s infinite',
+      },
     },
     scale: {
       '40': '0.40',  // Custom scale of 40%
