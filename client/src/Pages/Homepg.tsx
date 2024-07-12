@@ -53,9 +53,9 @@ export function Homepg() {
           </div>
         </motion.h1>
 
-        <div className="flex items-baseline gap-10">
+        <div className="lg:flex lg:items-baseline lg:gap-10">
           <div>
-            <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20 ml-28 mt-20">
+            <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20 lg:ml-28 mt-20 ml-[9.3rem]">
               About me
             </h1>
             <div className="w-[8.5rem] h-[32px] relative ml-32">
@@ -74,7 +74,7 @@ export function Homepg() {
             </div>
           </div>
 
-          <div className="w-[49rem] ml-[4rem]">
+          <div className="lg:w-[49rem] lg:ml-[4rem] lg:px-0 px-[2rem]">
             {" "}
             <TextGenerateEffect words={words} />
           </div>
