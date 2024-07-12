@@ -5,3 +5,19 @@
 :root{
     background-color: black;
 }
+
+.textHover {
+    display: inline-block;
+    position: relative;
+    color: white; 
+  }
+  
+  .textHover:hover {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 1s ease, color 1s ease; 
+  }
+  
