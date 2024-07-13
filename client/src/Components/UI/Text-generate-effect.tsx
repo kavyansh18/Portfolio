@@ -1,40 +1,46 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { cn } from "../../Utils/cn.ts";
-import '../../index.css'; // Import the custom CSS
+import '../../index.css';
 
 export const TextGenerateEffect = ({
   words,
   className,
+  onComplete, // add onComplete prop here
 }: {
   words: string;
   className?: string;
+  onComplete?: () => void; // define onComplete prop type
 }) => {
-  const [scope, animate] = useAnimate();
+  const controls = useAnimation();
   const elementRef = useRef<HTMLDivElement>(null);
   let wordsArray = words.split(" ");
 
   useEffect(() => {
+    const sequence = async () => {
+      await controls.start(i => ({
+        opacity: 1,
+        transition: {
+          delay: i * 0.1,
+        },
+      }));
+
+      if (onComplete) {
+        onComplete();
+      }
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            animate(
-              "span",
-              {
-                opacity: 1,
-              },
-              {
-                duration: 2,
-                delay: stagger(0.1),
-              }
-            );
+            sequence();
             observer.disconnect();
           }
         });
       },
-      { threshold: 0.1 } 
+      { threshold: 0.1 }
     );
 
     if (elementRef.current) {
@@ -46,25 +52,27 @@ export const TextGenerateEffect = ({
         observer.unobserve(elementRef.current);
       }
     };
-  }, [scope.current, animate]);
+  }, [controls, onComplete]);
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <div ref={elementRef}>
         {wordsArray.map((word, idx) => (
           <motion.span
             key={word + idx}
             className="textHover dark:text-white text-black opacity-0"
+            custom={idx}
+            animate={controls}
           >
             {word}&nbsp;
           </motion.span>
         ))}
-      </motion.div>
+      </div>
     );
   };
 
   return (
-    <div ref={elementRef} className={cn("font-bold", className)}>
+    <div className={cn("font-bold", className)}>
       <div className="mt-4">
         <div className="lg:text-2xl text-[12px] leading-snug tracking-wide">
           {renderWords()}

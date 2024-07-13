@@ -22,9 +22,18 @@ module.exports = {
             animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
           },
         },
+        shimmer: {
+          from: {
+            "backgroundPosition": "0 0"
+          },
+          to: {
+            "backgroundPosition": "-200% 0"
+          }
+        },
       },
       animation: {
         bounce: 'bounce 0.6s infinite',
+        shimmer: "shimmer 2s linear infinite",
       },
     },
     scale: {
