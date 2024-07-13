@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import ToggleSwitch from "../Components/ToggleSwitch";
 import Navbaar from "../Components/Navbaar.tsx";
 import "../Components/UI/ToggleSwitch.css";
@@ -9,6 +9,22 @@ import down from "../assets/downarrow.svg";
 import { Sparkles } from "../Components/UI/Sparkles.tsx";
 import { TextGenerateEffect } from "../Components/UI/Text-generate-effect.tsx";
 import resumePdf from "../assets/resume.pdf";
+import js from "../assets/js.svg";
+import py from "../assets/python.svg";
+import c from "../assets/c.svg";
+import cpp from "../assets/cpp.svg";
+import html from "../assets/html.svg";
+import vcss from "../assets/vcss.svg";
+import tcss from "../assets/tcss.svg";
+import ts from "../assets/ts.svg";
+import react from "../assets/react.svg";
+import node from "../assets/node.svg";
+import mysql from "../assets/mysql.svg";
+import mdb from "../assets/mongodb.svg";
+import github from "../assets/github.svg";
+import git from "../assets/git.svg";
+import canva from "../assets/canva.svg";
+import wp from "../assets/wordpress.svg";
 
 const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows and Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
@@ -21,37 +37,37 @@ export function Homepg() {
     const stopBounce = () => {
       if (window.scrollY > 300) {
         setBounce(false);
-        window.removeEventListener('scroll', stopBounce);
+        window.removeEventListener("scroll", stopBounce);
       }
     };
 
-    window.addEventListener('scroll', stopBounce);
+    window.addEventListener("scroll", stopBounce);
 
     const timer = setTimeout(() => {
       setBounce(false);
-      window.removeEventListener('scroll', stopBounce);
+      window.removeEventListener("scroll", stopBounce);
     }, 5000);
 
     return () => {
       clearTimeout(timer);
-      window.removeEventListener('scroll', stopBounce);
+      window.removeEventListener("scroll", stopBounce);
     };
   }, []);
 
   const handleDownloadResume = () => {
     fetch(resumePdf)
-      .then(response => response.blob())
-      .then(blob => {
+      .then((response) => response.blob())
+      .then((blob) => {
         const url = window.URL.createObjectURL(new Blob([blob]));
-        const link = document.createElement('a');
+        const link = document.createElement("a");
         link.href = url;
-        link.setAttribute('download', 'Kavyansh_Resume.pdf');
+        link.setAttribute("download", "Kavyansh_Resume.pdf");
         document.body.appendChild(link);
         link.click();
         link.parentNode?.removeChild(link);
       })
-      .catch(error => {
-        console.error('Error downloading resume:', error);
+      .catch((error) => {
+        console.error("Error downloading resume:", error);
       });
   };
 
@@ -104,11 +120,7 @@ export function Homepg() {
                 }}
               />
             ) : (
-              <img
-                className="w-[3rem]"
-                src={down}
-                alt=""
-              />
+              <img className="w-[3rem]" src={down} alt="" />
             )}
           </div>
         </motion.h1>
@@ -135,7 +147,10 @@ export function Homepg() {
           </div>
           <div>
             <div className="lg:w-[49rem] lg:ml-[4rem] lg:px-0 px-[2rem]">
-              <TextGenerateEffect words={words} onComplete={() => setTextGenerated(true)} />
+              <TextGenerateEffect
+                words={words}
+                onComplete={() => setTextGenerated(true)}
+              />
             </div>
             {textGenerated && (
               <motion.button
@@ -151,7 +166,232 @@ export function Homepg() {
           </div>
         </div>
       </HeroHighlight>
+
       <ToggleSwitch />
+
+      <div className="h-[33rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
+        {/* Radial gradient for the container to give a faded look */}
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+
+        <div>
+          <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20  flex items-center justify-center pt-1">
+            Tech Stacks
+          </h1>
+          <div className="w-[8.5rem] h-[32px] relative">
+            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full left-[35rem] blur-sm" />
+            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full left-[35rem] " />
+
+            <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)] "></div>
+          </div>
+        </div>
+
+        <div className="flex flex-col z-50">
+
+          <div className=" flex justify-start items-start mx-24 absolute gap-32">
+            <div>
+              <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
+                Languages
+              </h1>
+            </div>
+            <div className="flex justify-center items-center gap-5">
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={py} alt="" />
+                </div>
+                <div className="text-white">Python</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={c} alt="" />
+                </div>
+                <div className="text-white">C</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={cpp} alt="" />
+                </div>
+                <div className="text-white">C++</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={js} alt="" />
+                </div>
+                <div className="text-white">JavaScript</div>
+              </a>
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={ts} alt="" />
+                </div>
+                <div className="text-white">TypeScript</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={mysql} alt="" />
+                </div>
+                <div className="text-white">MySQL</div>
+              </a>
+
+            </div>
+          </div>
+
+          <div className=" flex justify-start items-start mx-24 absolute gap-12 mt-32">
+            <div>
+              <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
+                Web Technologies
+              </h1>
+            </div>
+            <div className="flex justify-center items-center gap-5 ml-[15px]">
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={html} alt="" />
+                </div>
+                <div className="text-white">HTML</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={vcss} alt="" />
+                </div>
+                <div className="text-white">Vanilla CSS</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={tcss} alt="" />
+                </div>
+                <div className="text-white">Tailwind CSS</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={react} alt="" />
+                </div>
+                <div className="text-white">React js</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={node} alt="" />
+                </div>
+                <div className="text-white">Node js</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={mdb} alt="" />
+                </div>
+                <div className="text-white">Mongo DB</div>
+              </a>
+            </div>
+          </div>
+
+          <div className=" flex justify-start items-start mx-24 absolute gap-16 mt-[16rem]">
+            <div>
+              <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
+                Tools / Platforms
+              </h1>
+            </div>
+            <div className="flex justify-center items-center gap-5 ml-3">
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={git} alt="" />
+                </div>
+                <div className="text-white">Git</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={github} alt="" />
+                </div>
+                <div className="text-white">Github</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={canva} alt="" />
+                </div>
+                <div className="text-white">Canva</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img src={wp} alt="" />
+                </div>
+                <div className="text-white">WordPress</div>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
