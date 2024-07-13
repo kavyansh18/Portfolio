@@ -29,6 +29,11 @@ import wp from "../assets/wordpress.svg";
 const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows and Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export function Homepg() {
   const [textGenerated, setTextGenerated] = useState(false);
   const [bounce, setBounce] = useState(true);
@@ -169,25 +174,36 @@ export function Homepg() {
 
       <ToggleSwitch />
 
-      <div className="h-[33rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
-        {/* Radial gradient for the container to give a faded look */}
+      <div className="h-[33rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-        <div>
-          <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20  flex items-center justify-center pt-1">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center pt-1">
             Tech Stacks
           </h1>
           <div className="w-[8.5rem] h-[32px] relative">
             <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full left-[35rem] blur-sm" />
-            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full left-[35rem] " />
+            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full left-[35rem]" />
 
-            <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)] "></div>
+            <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col z-50">
-
-          <div className=" flex justify-start items-start mx-24 absolute gap-32">
+        <motion.div
+          className="flex flex-col z-50"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
+          <div className="flex justify-start items-start mx-24 absolute gap-32">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Languages
@@ -258,11 +274,19 @@ export function Homepg() {
                 </div>
                 <div className="text-white">MySQL</div>
               </a>
-
             </div>
           </div>
+        </motion.div>
 
-          <div className=" flex justify-start items-start mx-24 absolute gap-12 mt-32">
+        <motion.div
+          className="flex flex-col z-50 mt-32 absolute"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
+          <div className="flex justify-start items-start mx-24 gap-12">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Web Technologies
@@ -336,8 +360,17 @@ export function Homepg() {
               </a>
             </div>
           </div>
+        </motion.div>
 
-          <div className=" flex justify-start items-start mx-24 absolute gap-16 mt-[16rem]">
+        <motion.div
+          className="flex flex-col z-50 mt-[16rem] absolute"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
+          <div className="flex justify-start items-start mx-24 gap-16">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Tools / Platforms
@@ -387,10 +420,9 @@ export function Homepg() {
                 </div>
                 <div className="text-white">WordPress</div>
               </a>
-              
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
