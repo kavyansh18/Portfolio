@@ -174,7 +174,7 @@ export function Homepg() {
 
       <ToggleSwitch />
 
-      <div className="h-[33rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
+      <div className="h-[73rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
         <motion.div
@@ -279,7 +279,7 @@ export function Homepg() {
         </motion.div>
 
         <motion.div
-          className="flex flex-col z-50 mt-32 absolute"
+          className="flex flex-col z-20 mt-32 absolute"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -363,7 +363,7 @@ export function Homepg() {
         </motion.div>
 
         <motion.div
-          className="flex flex-col z-50 mt-[16rem] absolute"
+          className="flex flex-col z-20 mt-[16rem] absolute"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
