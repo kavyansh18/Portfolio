@@ -7,11 +7,11 @@ import '../../index.css';
 export const TextGenerateEffect = ({
   words,
   className,
-  onComplete, // add onComplete prop here
+  onComplete, 
 }: {
   words: string;
   className?: string;
-  onComplete?: () => void; // define onComplete prop type
+  onComplete?: () => void; 
 }) => {
   const controls = useAnimation();
   const elementRef = useRef<HTMLDivElement>(null);
@@ -22,7 +22,7 @@ export const TextGenerateEffect = ({
       await controls.start(i => ({
         opacity: 1,
         transition: {
-          delay: i * 0.1,
+          delay: i * 0.08,
         },
       }));
 

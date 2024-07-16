@@ -494,7 +494,7 @@ export function Homepg() {
               onMouseEnter={() => handleHover(true)}
               onMouseLeave={() => handleHover(false)}
             >
-              <CardContainer className="inter-var flex-shrink-0 ml-[20rem]">
+              <CardContainer className="inter-var flex-shrink-0 ml-[18rem]">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
@@ -793,6 +793,7 @@ export function Homepg() {
               </CardContainer>
             </div>
           </div>
+          
           <div className="w-full flex flex-wrap justify-center gap-6 mt-8">
           <a className="relative" href="https://github.com/kavyansh18?tab=repositories" target="_blank">
             <span className="absolute top-0 left-0 mt-1 ml-1 h-full rounded bg-red"></span>
