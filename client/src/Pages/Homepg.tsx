@@ -25,12 +25,12 @@ import github from "../assets/github.svg";
 import git from "../assets/git.svg";
 import canva from "../assets/canva.svg";
 import wp from "../assets/wordpress.svg";
-import massMailer from '../assets/mass-mailer2.jpeg'
-import feedbackform from '../assets/feedback-form1.jpeg'
-import stackoverflow from '../assets/stack-overflow.jpeg'
-import markdown from '../assets/markdown.png'
-import todo from '../assets/todo.png'
-import ams from '../assets/ams.jpeg'
+import massMailer from "../assets/mass-mailer2.jpeg";
+import feedbackform from "../assets/feedback-form1.jpeg";
+import stackoverflow from "../assets/stack-overflow.jpeg";
+import markdown from "../assets/markdown.png";
+import todo from "../assets/todo.png";
+import ams from "../assets/ams.jpeg";
 import {
   CardBody,
   CardContainer,
@@ -451,7 +451,6 @@ export function Homepg() {
           </div>
         </motion.div>
         //PROJECTS
-
         <motion.div
           className="z-20 mt-[25rem] "
           initial="hidden"
@@ -470,7 +469,6 @@ export function Homepg() {
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
         </motion.div>
-
         <motion.div
           className="z-20"
           initial="hidden"
@@ -493,7 +491,9 @@ export function Homepg() {
                   translateZ="60"
                   className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
                 >
-                  Our massmailer simplifies email marketing with personalized messages to multiple recipients quickly and easily. Ideal for businesses, marketers, and communicators.
+                  Our massmailer simplifies email marketing with personalized
+                  messages to multiple recipients quickly and easily. Ideal for
+                  businesses, marketers, and communicators.
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                   <img
@@ -540,7 +540,9 @@ export function Homepg() {
                   translateZ="60"
                   className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
                 >
-                  This project was my internship task, involving the creation of a user-friendly feedback form to gather insights on new soap products before their launch.
+                  This project was my internship task, involving the creation of
+                  a user-friendly feedback form to gather insights on new soap
+                  products before their launch.
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                   <img
@@ -589,7 +591,10 @@ export function Homepg() {
                   translateZ="60"
                   className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
                 >
-                Stack Overflow-like service as my internship project using the MERN stack. This platform enables users to ask questions, receive answers, and engage in community-driven technical discussions.
+                  Stack Overflow-like service as my internship project using the
+                  MERN stack. This platform enables users to ask questions,
+                  receive answers, and engage in community-driven technical
+                  discussions.
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                   <img
@@ -636,7 +641,9 @@ export function Homepg() {
                   translateZ="60"
                   className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
                 >
-                  Designed to provide real-time rendering of Markdown text into HTML. Using React's built-in libraries and custom JavaScript, it allows users to see formatted content instantly.
+                  Designed to provide real-time rendering of Markdown text into
+                  HTML. Using React's built-in libraries and custom JavaScript,
+                  it allows users to see formatted content instantly.
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                   <img
@@ -669,8 +676,6 @@ export function Homepg() {
                 </div>
               </CardBody>
             </CardContainer>
-
-            
           </div>
           <div className="flex justify-center items-center gap-10 mt-20">
             <CardContainer className="inter-var">
@@ -686,7 +691,9 @@ export function Homepg() {
                   translateZ="60"
                   className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
                 >
-                Targetting React.js and Context API, ensuring tasks are securely stored in local storage. This feature allows users to retain their task lists even after quitting the browser.
+                  Targetting React.js and Context API, ensuring tasks are
+                  securely stored in local storage. This feature allows users to
+                  retain their task lists even after quitting the browser.
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                   <img
@@ -733,8 +740,11 @@ export function Homepg() {
                   translateZ="60"
                   className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
                 >
-                  
-The Airport Management System enhances aircraft and customer management using modern technologies. It streamlines data entry, validation, and updates for efficient operations, surpassing traditional manual systems in meeting customer needs.
+                  The Airport Management System enhances aircraft and customer
+                  management using modern technologies. It streamlines data
+                  entry, validation, and updates for efficient operations,
+                  surpassing traditional manual systems in meeting customer
+                  needs.
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                   <img
@@ -767,8 +777,6 @@ The Airport Management System enhances aircraft and customer management using mo
                 </div>
               </CardBody>
             </CardContainer>
-
-            
           </div>
         </motion.div>
       </div>
