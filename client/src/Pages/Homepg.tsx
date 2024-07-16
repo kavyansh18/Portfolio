@@ -37,6 +37,7 @@ const sectionVariants = {
 export function Homepg() {
   const [textGenerated, setTextGenerated] = useState(false);
   const [bounce, setBounce] = useState(true);
+  const [downloaded, setDownloaded] = useState(false);
 
   useEffect(() => {
     const stopBounce = () => {
@@ -70,6 +71,7 @@ export function Homepg() {
         document.body.appendChild(link);
         link.click();
         link.parentNode?.removeChild(link);
+        setDownloaded(true);
       })
       .catch((error) => {
         console.error("Error downloading resume:", error);
@@ -165,7 +167,24 @@ export function Homepg() {
                 transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}
                 className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-slate-400 transition-colors lg:ml-[4rem] mt-6"
               >
-                Download Resume
+                {downloaded ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                ) : (
+                  "Download Resume"
+                )}
               </motion.button>
             )}
           </div>
@@ -423,6 +442,27 @@ export function Homepg() {
             </div>
           </div>
         </motion.div>
+          
+          //PROJECTS
+        <motion.div
+          className="z-20 mt-[27rem] "
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center pt-1">
+            Tech Stacks
+          </h1>
+          <div className="w-[8.5rem] h-[32px] relative">
+            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full left-[35rem] blur-sm" />
+            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full left-[35rem]" />
+
+            <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
+          </div>
+        </motion.div>
+
       </div>
     </div>
   );
