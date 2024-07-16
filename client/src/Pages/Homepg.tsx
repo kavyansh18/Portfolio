@@ -25,6 +25,18 @@ import github from "../assets/github.svg";
 import git from "../assets/git.svg";
 import canva from "../assets/canva.svg";
 import wp from "../assets/wordpress.svg";
+import massMailer from '../assets/mass-mailer2.jpeg'
+import feedbackform from '../assets/feedback-form1.jpeg'
+import stackoverflow from '../assets/stack-overflow.jpeg'
+import markdown from '../assets/markdown.png'
+import todo from '../assets/todo.png'
+import ams from '../assets/ams.jpeg'
+import {
+  CardBody,
+  CardContainer,
+  CardItem,
+} from "../Components/UI/3D-card.tsx";
+import { Link } from "react-router-dom";
 
 const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows and Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
@@ -193,9 +205,8 @@ export function Homepg() {
 
       <ToggleSwitch />
 
-      <div className="h-[73rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
+      <div className="h-[140rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -213,7 +224,6 @@ export function Homepg() {
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
         </motion.div>
-
         <motion.div
           className="flex flex-col z-50"
           initial="hidden"
@@ -296,7 +306,6 @@ export function Homepg() {
             </div>
           </div>
         </motion.div>
-
         <motion.div
           className="flex flex-col z-20 mt-32 absolute"
           initial="hidden"
@@ -380,7 +389,6 @@ export function Homepg() {
             </div>
           </div>
         </motion.div>
-
         <motion.div
           className="flex flex-col z-20 mt-[16rem] absolute"
           initial="hidden"
@@ -442,27 +450,327 @@ export function Homepg() {
             </div>
           </div>
         </motion.div>
-          
-          //PROJECTS
+        //PROJECTS
+
         <motion.div
-          className="z-20 mt-[27rem] "
+          className="z-20 mt-[25rem] "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center pt-1">
-            Tech Stacks
+          <h1 className="md:text-7xl text-m lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center pt-1">
+            Projects
           </h1>
           <div className="w-[8.5rem] h-[32px] relative">
             <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full left-[35rem] blur-sm" />
-            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full left-[35rem]" />
+            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full left-[35.6rem]" />
 
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
         </motion.div>
 
+        <motion.div
+          className="z-20"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
+          <div className="flex justify-center items-center gap-10">
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-lg font-bold text-neutral-600 dark:text-white"
+                >
+                  MassMailer: Reach Your Audience with One Click
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                >
+                  Our massmailer simplifies email marketing with personalized messages to multiple recipients quickly and easily. Ideal for businesses, marketers, and communicators.
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <img
+                    src={massMailer}
+                    height={1000}
+                    width={1000}
+                    className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+                <div className="flex justify-between items-center mt-5">
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://mass-mailer-omega.vercel.app/"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    Try now →
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://github.com/kavyansh18/MassMailer"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Source Code
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                >
+                  B&0 Feedback Form
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                >
+                  This project was my internship task, involving the creation of a user-friendly feedback form to gather insights on new soap products before their launch.
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <img
+                    src={feedbackform}
+                    height={1000}
+                    width={1000}
+                    className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+                <div className="flex justify-between items-center mt-5">
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://feedbackbno.netlify.app"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    Try now →
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://github.com/kavyansh18/feedback-form"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Source Code
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+          </div>
+
+          <div className="flex justify-center items-center gap-10 mt-20">
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-lg font-bold text-neutral-600 dark:text-white"
+                >
+                  StackOverflow
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                >
+                Stack Overflow-like service as my internship project using the MERN stack. This platform enables users to ask questions, receive answers, and engage in community-driven technical discussions.
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <img
+                    src={stackoverflow}
+                    height={1000}
+                    width={1000}
+                    className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+                <div className="flex justify-between items-center mt-5">
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://stackoverflow-kk.netlify.app/"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    Try now →
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://github.com/kavyansh18/stackoverflow"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Source Code
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                >
+                  Quick MarkDown Preview
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                >
+                  Designed to provide real-time rendering of Markdown text into HTML. Using React's built-in libraries and custom JavaScript, it allows users to see formatted content instantly.
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <img
+                    src={markdown}
+                    height={1000}
+                    width={1000}
+                    className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+                <div className="flex justify-between items-center mt-5">
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://gdsc-task-mu.vercel.app/"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    Try now →
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://github.com/kavyansh18/gdsc-task"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Source Code
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+
+            
+          </div>
+          <div className="flex justify-center items-center gap-10 mt-20">
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-lg font-bold text-neutral-600 dark:text-white"
+                >
+                  ToDo Manager using Context
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                >
+                Targetting React.js and Context API, ensuring tasks are securely stored in local storage. This feature allows users to retain their task lists even after quitting the browser.
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <img
+                    src={todo}
+                    height={1000}
+                    width={1000}
+                    className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+                <div className="flex justify-between items-center mt-5">
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://todo-omega-snowy.vercel.app/"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    Try now →
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://github.com/kavyansh18/TODO"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Source Code
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="50"
+                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                >
+                  Airport Management System
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                >
+                  
+The Airport Management System enhances aircraft and customer management using modern technologies. It streamlines data entry, validation, and updates for efficient operations, surpassing traditional manual systems in meeting customer needs.
+                </CardItem>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <img
+                    src={ams}
+                    height={1000}
+                    width={1000}
+                    className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+                <div className="flex justify-between items-center mt-5">
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://github.com/kavyansh18/Airport-Management-System"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    Try now →
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    to="https://github.com/kavyansh18/Airport-Management-System"
+                    target="_blank"
+                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                  >
+                    Source Code
+                  </CardItem>
+                </div>
+              </CardBody>
+            </CardContainer>
+
+            
+          </div>
+        </motion.div>
       </div>
     </div>
   );
