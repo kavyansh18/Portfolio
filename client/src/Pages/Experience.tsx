@@ -1,4 +1,4 @@
-import { BackgroundBeams } from "../Components/UI/Background-beams";
+import { BackgroundBeams } from "../Components/UI/Background-beams.tsx";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -10,6 +10,7 @@ import bno from "../assets/bno.png";
 import nc from "../assets/nc.png"; 
 import tph from "../assets/tph.png"; 
 import htb from "../assets/htb.png"; 
+import { motion } from "framer-motion";
 
 interface CustomTimelineDotProps {
   icon: string;
@@ -37,16 +38,36 @@ const CustomTimelineDot: React.FC<CustomTimelineDotProps> = ({ icon }) => (
   </div>
 );
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const Experience = () => {
   return (
     <div className="h-[55rem] w-full rounded-md bg-neutral-950 relative flex flex-col antialiased">
       <div className="max-w-2xl mx-auto p-4">
+      <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
         <h1 className="relative z-10 text-lg md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mt-14">
           Experience
         </h1>
+        </motion.div>
       </div>
       <div>
         <Timeline position="alternate">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
           <TimelineItem>
             <TimelineOppositeContent
               sx={{
@@ -82,6 +103,15 @@ const Experience = () => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
+          </motion.div>
+
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
           <TimelineItem>
             <TimelineOppositeContent
               sx={{
@@ -117,6 +147,15 @@ const Experience = () => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
+          </motion.div>
+
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
           <TimelineItem>
             <TimelineOppositeContent
               sx={{
@@ -152,6 +191,15 @@ const Experience = () => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
+          </motion.div>
+
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
           <TimelineItem>
             <TimelineOppositeContent
               sx={{
@@ -187,6 +235,7 @@ const Experience = () => {
               </Typography>
             </TimelineContent>
           </TimelineItem>
+          </motion.div>
         </Timeline>
       </div>
       <BackgroundBeams />
