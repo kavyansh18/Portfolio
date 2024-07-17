@@ -9,6 +9,7 @@ import down from "../assets/downarrow.svg";
 import { Sparkles } from "../Components/UI/Sparkles.tsx";
 import { TextGenerateEffect } from "../Components/UI/Text-generate-effect.tsx";
 import resumePdf from "../assets/resume.pdf";
+import Experience from "./Experience.tsx";
 import js from "../assets/js.svg";
 import py from "../assets/python.svg";
 import c from "../assets/c.svg";
@@ -38,6 +39,7 @@ import {
 } from "../Components/UI/3D-card.tsx";
 import { Link } from "react-router-dom";
 import "../index.css";
+import bnb from '../assets/beatsnbytes.png'
 
 const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows and Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
@@ -791,6 +793,53 @@ export function Homepg() {
                   </div>
                 </CardBody>
               </CardContainer>
+
+              <CardContainer className="inter-var flex-shrink-0">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                  >
+                    Beats&Bytes
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                  >
+                    it is a web app for offline music playback, storing songs locally on your device. It features an intuitive interface, playlist management, and supports various audio formats. Built with React.js and Node.js, it ensures a seamless, internet-free music experience.
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <img
+                      src={bnb}
+                      height={1000}
+                      width={1000}
+                      className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="flex justify-between items-center mt-5">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://beats-n-bytes.vercel.app/"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://github.com/kavyansh18/BeatsnBytes"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Source Code
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
             </div>
           </div>
           
@@ -803,6 +852,11 @@ export function Homepg() {
           </a>
           </div>
         </motion.div>
+      </div>
+
+      //export 
+      <div>
+        <Experience />
       </div>
     </div>
   );
