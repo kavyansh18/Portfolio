@@ -12,7 +12,7 @@ import tph from "../assets/tph.png";
 import htb from "../assets/htb.png"; 
 
 interface CustomTimelineDotProps {
-  icon: string; // Define the type of 'icon' prop
+  icon: string;
 }
 
 const CustomTimelineDot: React.FC<CustomTimelineDotProps> = ({ icon }) => (

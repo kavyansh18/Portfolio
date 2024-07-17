@@ -49,12 +49,13 @@ const sectionVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
+
 export function Homepg() {
   const [textGenerated, setTextGenerated] = useState(false);
   const [bounce, setBounce] = useState(true);
   const [downloaded, setDownloaded] = useState(false);
 
-  function handleHover(isHovering) {
+  function handleHover(isHovering:boolean) {
     const container = document.querySelector(".animate-scrolling");
     if (isHovering) {
       container?.classList.add("paused");
