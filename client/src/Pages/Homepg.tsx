@@ -844,6 +844,13 @@ export function Homepg() {
             </div>
           </div>
           
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
           <div className="w-full flex flex-wrap justify-center gap-6 mt-8">
           <a className="relative" href="https://github.com/kavyansh18?tab=repositories" target="_blank">
             <span className="absolute top-0 left-0 mt-1 ml-1 h-full rounded bg-red"></span>
@@ -852,6 +859,7 @@ export function Homepg() {
             </span>
           </a>
           </div>
+          </motion.div>
         </motion.div>
       </div>
 
