@@ -4,10 +4,23 @@ import github from "../assets/github 2.svg";
 import twitter from "../assets/twitter.svg";
 import ldn from "../assets/ldn.svg";
 import email from "../assets/email.svg";
+import { motion } from "framer-motion";
+
+const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
 
 const Contact = () => {
   return (
-    <div className=" mt-20 h-[18rem] backdrop-blur-sm p-10 flex justify-center items-center gap-28">
+    <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
+    <div className=" mt-16 h-[18rem] backdrop-blur-sm p-10 flex justify-center items-center gap-28">
       <div>
         <div className="ml-3 text-m md:text-4xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 font-sans font-bold">Let's Connect</div>
         <div className="text-cyan-200 ml-3">
@@ -76,6 +89,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 
