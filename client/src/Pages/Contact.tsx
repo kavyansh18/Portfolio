@@ -7,7 +7,7 @@ import email from "../assets/email.svg";
 import { motion } from "framer-motion";
 
 const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 70 },
     visible: { opacity: 1, y: 0 },
   };
 
