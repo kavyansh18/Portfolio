@@ -11,7 +11,7 @@ import nc from "../assets/nc.png";
 import tph from "../assets/tph.png"; 
 import htb from "../assets/htb.png"; 
 import { motion } from "framer-motion";
-import Contact from '../Pages/Contact.tsx'
+
 
 interface CustomTimelineDotProps {
   icon: string;
@@ -46,7 +46,7 @@ const sectionVariants = {
 
 const Experience = () => {
   return (
-    <div className="h-[73rem] w-full rounded-md bg-neutral-950 relative flex flex-col antialiased">
+    <div className="h-[55rem] w-full rounded-md bg-neutral-950 relative flex flex-col antialiased">
       <div className="max-w-2xl mx-auto p-4">
       <motion.div
           initial="hidden"
@@ -241,7 +241,6 @@ const Experience = () => {
         {/* <Contact /> */}
       </div>
       <BackgroundBeams />
-      <Contact />
     </div>
   );
 };

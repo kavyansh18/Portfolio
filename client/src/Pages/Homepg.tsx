@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Contact from '../Pages/Contact.tsx'
+import { Gallary } from "./Gallary.tsx";
 import ToggleSwitch from "../Components/ToggleSwitch";
 import Navbaar from "../Components/Navbaar.tsx";
 import "../Components/UI/ToggleSwitch.css";
@@ -866,6 +868,14 @@ export function Homepg() {
       //export 
       <div>
         <Experience />
+      </div>
+
+      <div>
+      <Gallary />
+      </div>
+
+      <div>
+      <Contact />
       </div>
     </div>
   );
