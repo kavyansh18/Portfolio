@@ -238,7 +238,22 @@ const Experience = () => {
           </TimelineItem>
           </motion.div>
         </Timeline>
-        {/* <Contact /> */}
+
+        <div className="max-w-2xl mx-auto p-4">
+      <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={sectionVariants}
+          transition={{ duration: 1 }}
+        >
+        <h1 className="relative z-10 text-lg md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mt-14">
+          Gallary
+        </h1>
+        <p className="text-center text-gray-500 text-[11px]">
+          Click to know more</p>
+        </motion.div>
+      </div>
       </div>
       <BackgroundBeams />
     </div>
@@ -246,3 +261,4 @@ const Experience = () => {
 };
 
 export default Experience;
+
