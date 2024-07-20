@@ -144,7 +144,7 @@ const SkeletonSix = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Presenting our project to proffessor
+        Presenting our project to professor
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
