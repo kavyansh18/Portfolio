@@ -11,6 +11,8 @@ import nc from "../assets/nc.png";
 import tph from "../assets/tph.png"; 
 import htb from "../assets/htb.png"; 
 import { motion } from "framer-motion";
+import GithubCalender from '../Components/GithubCalender.tsx'
+import '../Components/UI/GitHubContributionGraph.css';
 
 
 interface CustomTimelineDotProps {
@@ -46,7 +48,7 @@ const sectionVariants = {
 
 const Experience = () => {
   return (
-    <div className="h-[55rem] w-full rounded-md bg-neutral-950 relative flex flex-col antialiased">
+    <div className="h-[72rem] w-full rounded-md bg-neutral-950 relative flex flex-col antialiased">
       <div className="max-w-2xl mx-auto p-4">
       <motion.div
           initial="hidden"
@@ -238,6 +240,10 @@ const Experience = () => {
           </TimelineItem>
           </motion.div>
         </Timeline>
+
+      <div className="flex flex-col justify-center items-center mt-12 z-40">
+      <GithubCalender username="kavyansh18" />
+      </div>
 
         <div className="max-w-2xl mx-auto p-4">
       <motion.div
