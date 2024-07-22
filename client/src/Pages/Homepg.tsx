@@ -34,6 +34,7 @@ import stackoverflow from "../assets/stack-overflow.jpeg";
 import markdown from "../assets/markdown.png";
 import todo from "../assets/todo.png";
 import ams from "../assets/ams.jpeg";
+import vite from '../assets/vite.svg'
 import {
   CardBody,
   CardContainer,
@@ -378,6 +379,17 @@ export function Homepg() {
                   <img src={react} alt="" />
                 </div>
                 <div className="text-white">React js</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img className=" w-[65px]" src={vite} alt="" />
+                </div>
+                <div className="text-white pt-3 text-m">Vite</div>
               </a>
 
               <a
