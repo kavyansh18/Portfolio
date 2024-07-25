@@ -78,7 +78,7 @@ const Experience = () => {
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   fontSize: {
-                    xs: "1rem", 
+                    xs: "0.8rem", 
                     lg: "1.3rem"   
                   },
                 }}
