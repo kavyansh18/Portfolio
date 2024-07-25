@@ -56,7 +56,7 @@ const Experience = () => {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <h1 className="relative z-10 text-lg md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mt-14">
+          <h1 className="relative z-10 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mt-14">
             Experience
           </h1>
         </motion.div>
@@ -77,12 +77,15 @@ const Experience = () => {
                   background: "linear-gradient(to right, #7c3aed, #4f46e5)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  fontSize: "1.3rem",
+                  fontSize: {
+                    xs: "1rem", 
+                    lg: "1.3rem"   
+                  },
                 }}
                 align="right"
                 variant="body2"
               >
-                Busy&Organised(B&O)
+                Busy&Organised (B&O)
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineConnector sx={{ minHeight: "4rem" }} />
@@ -93,14 +96,23 @@ const Experience = () => {
                 <Typography
                   variant="h6"
                   component="span"
-                  sx={{ color: "#008DDA", fontSize: "1.6rem" }}
+                  sx={{ color: "#008DDA", fontSize: {
+                    xs: "1rem", 
+                    lg: "1.6rem"   
+                  }, }}
                 >
                   Web Developer Intern
                 </Typography>
-                <Typography sx={{ color: "#41C9E2", fontSize: "1rem" }}>
+                <Typography sx={{ color: "#41C9E2", fontSize: {
+                    xs: "0.8rem", 
+                    lg: "1rem"   
+                  }, }}>
                   1st February'24 - 31st February'24
                 </Typography>
-                <Typography sx={{ color: "#DFF5FF", fontSize: "0.9rem" }}>
+                <Typography sx={{ color: "#DFF5FF", fontSize: {
+                    xs: "0.7rem", 
+                    lg: "0.9rem"   
+                  }, }}>
                   Because you need a start
                 </Typography>
               </TimelineContent>
@@ -137,14 +149,23 @@ const Experience = () => {
                 <Typography
                   variant="h6"
                   component="span"
-                  sx={{ color: "#008DDA", fontSize: "1.6rem" }}
+                  sx={{ color: "#008DDA", fontSize: {
+                    xs: "1rem", 
+                    lg: "1.6rem"   
+                  }, }}
                 >
                   Web Developer Intern
                 </Typography>
-                <Typography sx={{ color: "#41C9E2", fontSize: "1rem" }}>
+                <Typography sx={{ color: "#41C9E2", fontSize: {
+                    xs: "0.8rem", 
+                    lg: "1rem"   
+                  }, }}>
                   10th June'24 - 9th June'24
                 </Typography>
-                <Typography sx={{ color: "#DFF5FF", fontSize: "0.9rem" }}>
+                <Typography sx={{ color: "#DFF5FF", fontSize: {
+                    xs: "0.7rem", 
+                    lg: "0.9rem"   
+                  }, }}>
                   Because it's awesome!
                 </Typography>
               </TimelineContent>
@@ -165,7 +186,10 @@ const Experience = () => {
                   background: "linear-gradient(to right, #7c3aed, #4f46e5)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
-                  fontSize: "1.2rem",
+                  fontSize: {
+                    xs: "1rem", 
+                    lg: "1.2rem"   
+                  },
                 }}
                 align="right"
                 variant="body2"
@@ -181,14 +205,23 @@ const Experience = () => {
                 <Typography
                   variant="h6"
                   component="span"
-                  sx={{ color: "#008DDA", fontSize: "1.6rem" }}
+                  sx={{ color: "#008DDA", fontSize: {
+                    xs: "1rem", 
+                    lg: "1.6rem"   
+                  }, }}
                 >
                   Technical Team Member
                 </Typography>
-                <Typography sx={{ color: "#41C9E2", fontSize: "1rem" }}>
+                <Typography sx={{ color: "#41C9E2", fontSize: {
+                    xs: "0.8rem", 
+                    lg: "1rem"   
+                  }, }}>
                   December'24 - present
                 </Typography>
-                <Typography sx={{ color: "#DFF5FF", fontSize: "0.9rem" }}>
+                <Typography sx={{ color: "#DFF5FF", fontSize: {
+                    xs: "0.7rem", 
+                    lg: "0.9rem"   
+                  }, }}>
                   Because you need guidance
                 </Typography>
               </TimelineContent>
@@ -225,14 +258,23 @@ const Experience = () => {
                 <Typography
                   variant="h6"
                   component="span"
-                  sx={{ color: "#008DDA", fontSize: "1.6rem" }}
+                  sx={{ color: "#008DDA", fontSize: {
+                    xs: "1rem", 
+                    lg: "1.6rem"   
+                  }, }}
                 >
                   Technical Team Member
                 </Typography>
-                <Typography sx={{ color: "#008DDA", fontSize: "1rem" }}>
+                <Typography sx={{ color: "#41C9E2", fontSize: {
+                    xs: "0.8rem", 
+                    lg: "1rem"   
+                  }, }}>
                   March'24 - present
                 </Typography>
-                <Typography sx={{ color: "#DFF5FF", fontSize: "0.9rem" }}>
+                <Typography sx={{ color: "#DFF5FF", fontSize: {
+                    xs: "0.7rem", 
+                    lg: "0.9rem"   
+                  }, }}>
                   Because you need to contribute
                 </Typography>
               </TimelineContent>
@@ -247,7 +289,7 @@ const Experience = () => {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex flex-col justify-center items-center mt-12 z-40">
+          <div className="flex flex-col justify-center items-center mt-12 z-40 ml-9 lg:ml-0">
             <GithubCalender username="kavyansh18" />
           </div>
         </motion.div>

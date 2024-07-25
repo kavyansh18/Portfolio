@@ -10,3 +10,9 @@
   font-weight: bold;
   color: #333;
 }
+
+@media (min-width: 1200px) {
+  .github-contribution-graph {
+    scale: 170%;
+  }
+}
