@@ -25,7 +25,7 @@ export const Grid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-screen h-[48rem] px-10 pt-24 grid grid-cols-1 md:grid-cols-4  max-w-7xl mx-auto gap-4 relative">
+    <div className="w-screen lg:h-[48rem] h-[75rem] px-10 pt-24 grid grid-cols-2 md:grid-cols-4  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
@@ -34,7 +34,7 @@ export const Grid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-lg cursor-pointer absolute inset-0 lg:h-1/2 h-[27rem] w-[21rem] lg:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"
@@ -66,7 +66,7 @@ const ImageComponent = ({ card }: { card: Card }) => {
       height="500"
       width="500"
       className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
+        "object-cover object-top absolute inset-0 h-full w-full transition duration-200 "
       )}
       alt="thumbnail"
     />
@@ -75,7 +75,7 @@ const ImageComponent = ({ card }: { card: Card }) => {
 
 const SelectedCard = ({ selected }: { selected: Card | null }) => {
   return (
-    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]">
+    <div className="bg-transparent h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60] scale-50">
       <motion.div
         initial={{
           opacity: 0,
