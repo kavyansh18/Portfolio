@@ -426,7 +426,7 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-0 mt-20">
+          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-0 mt-24">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Tools / Platforms
