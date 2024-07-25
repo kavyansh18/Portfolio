@@ -126,7 +126,7 @@ export function Homepg() {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="text-4xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+          className="text-4xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto lg:mt-0 mt-12"
         >
           <div className="flex justify-center items-center mb-4">
             <Pfp />
@@ -138,7 +138,7 @@ export function Homepg() {
           <Highlight className="text-black dark:text-white mt-1">
             A FullStack Web Developer
           </Highlight>
-          <div className="w-full flex justify-center items-center mt-12">
+          <div className="w-full flex justify-center items-center lg:mt-12 mt-20">
             {bounce ? (
               <motion.img
                 className="w-[3rem] transition-all duration-200 ease-in-out"
@@ -188,12 +188,13 @@ export function Homepg() {
               />
             </div>
             {textGenerated && (
+              <div className="flex w-full justify-center lg:justify-start items-center lg:items-start">
               <motion.button
                 onClick={handleDownloadResume}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}
-                className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-slate-400 transition-colors lg:ml-[4rem] mt-6"
+                className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-slate-400 transition-colors mt-6 lg:ml-16 ml-0"
               >
                 {downloaded ? (
                   <svg
@@ -214,6 +215,7 @@ export function Homepg() {
                   "Download Resume"
                 )}
               </motion.button>
+              </div>
             )}
           </div>
         </div>
@@ -230,12 +232,12 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <h1 className="md:text-7xl text-lg lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center pt-1">
+          <h1 className="md:text-7xl text-2xl lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center pt-1">
             Tech Stacks
           </h1>
           <div className="w-[8.5rem] h-[32px] relative">
-            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full left-[35rem] blur-sm" />
-            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full left-[35rem]" />
+            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full lg:left-[35rem] left-[7.8rem] blur-sm" />
+            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full lg:left-[35rem] left-[7.8rem]" />
 
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
@@ -248,22 +250,22 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex justify-start items-start mx-24 absolute gap-32">
+          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 absolute lg:gap-32 gap-2">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Languages
               </h1>
             </div>
-            <div className="flex justify-center items-center gap-5">
+            <div className="lg:flex lg:justify-center lg:items-center lg:gap-5 gap-2 grid grid-cols-6 ">
               <a
                 href=""
                 target="_blank"
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={py} alt="" />
+                  <img className="lg:w-20 w-12" src={py} alt="" />
                 </div>
-                <div className="text-white">Python</div>
+                <div className="text-white lg:text-lg text-sm">Python</div>
               </a>
 
               <a
@@ -272,9 +274,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={c} alt="" />
+                  <img className="lg:w-20 w-12" src={c} alt="" />
                 </div>
-                <div className="text-white">C</div>
+                <div className="text-white lg:text-lg text-sm">C</div>
               </a>
 
               <a
@@ -283,9 +285,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={cpp} alt="" />
+                  <img className="lg:w-20 w-12" src={cpp} alt="" />
                 </div>
-                <div className="text-white">C++</div>
+                <div className="text-white lg:text-lg text-sm">C++</div>
               </a>
 
               <a
@@ -294,9 +296,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={js} alt="" />
+                  <img className="lg:w-20 w-12" src={js} alt="" />
                 </div>
-                <div className="text-white">JavaScript</div>
+                <div className="text-white lg:text-lg text-[10px]">JavaScript</div>
               </a>
               <a
                 href=""
@@ -304,9 +306,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={ts} alt="" />
+                  <img className="lg:w-20 w-12" src={ts} alt="" />
                 </div>
-                <div className="text-white">TypeScript</div>
+                <div className="text-white lg:text-lg text-[10px]">TypeScript</div>
               </a>
 
               <a
@@ -315,9 +317,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={mysql} alt="" />
+                  <img className="lg:w-20 w-12" src={mysql} alt="" />
                 </div>
-                <div className="text-white">MySQL</div>
+                <div className="text-white lg:text-lg text-[11px]">MySQL</div>
               </a>
             </div>
           </div>
@@ -330,20 +332,20 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex justify-start items-start mx-24 gap-12">
+          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Web Technologies
               </h1>
             </div>
-            <div className="flex justify-center items-center gap-5 ml-[15px]">
+            <div className="lg:flex lg:justify-center lg:items-center lg:gap-5 gap-4 grid grid-cols-5">
               <a
                 href=""
                 target="_blank"
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={html} alt="" />
+                  <img className="lg:w-20 w-12"  src={html} alt="" />
                 </div>
                 <div className="text-white">HTML</div>
               </a>
@@ -354,9 +356,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={vcss} alt="" />
+                  <img className="lg:w-20 w-12"  src={vcss} alt="" />
                 </div>
-                <div className="text-white">Vanilla CSS</div>
+                <div className="text-white lg:text-lg text-[10px]">Vanilla CSS</div>
               </a>
 
               <a
@@ -365,9 +367,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={tcss} alt="" />
+                  <img className="lg:w-20 w-12"  src={tcss} alt="" />
                 </div>
-                <div className="text-white">Tailwind CSS</div>
+                <div className="text-white lg:text-lg text-[8px]">Tailwind CSS</div>
               </a>
 
               <a
@@ -376,9 +378,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={react} alt="" />
+                  <img className="lg:w-20 w-12"  src={react} alt="" />
                 </div>
-                <div className="text-white">React js</div>
+                <div className="text-white lg:text-lg text-sm">React js</div>
               </a>
 
               <a
@@ -387,9 +389,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img className=" w-[65px]" src={vite} alt="" />
+                  <img className=" lg:w-[65px] w-[40px]" src={vite} alt="" />
                 </div>
-                <div className="text-white pt-3 text-m">Vite</div>
+                <div className="text-white pt-3 lg:text-m text-sm">Vite</div>
               </a>
 
               <a
@@ -398,9 +400,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={node} alt="" />
+                  <img className="lg:w-20 w-12"  src={node} alt="" />
                 </div>
-                <div className="text-white">Node js</div>
+                <div className="text-white lg:text-lg text-sm">Node js</div>
               </a>
 
               <a
@@ -409,9 +411,9 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img src={mdb} alt="" />
+                  <img className="lg:w-20 w-12"  src={mdb} alt="" />
                 </div>
-                <div className="text-white">Mongo DB</div>
+                <div className="text-white lg:text-lg text-[9px]">Mongo DB</div>
               </a>
             </div>
           </div>
@@ -424,13 +426,13 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex justify-start items-start mx-24 gap-16">
+          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-0 mt-20">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Tools / Platforms
               </h1>
             </div>
-            <div className="flex justify-center items-center gap-5 ml-3">
+            <div className="lg:flex lg:justify-center lg:items-center lg:gap-5 gap-4 grid grid-cols-5">
               <a
                 href=""
                 target="_blank"
@@ -486,12 +488,12 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <h1 className="md:text-7xl text-m lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center pt-1">
+          <h1 className="md:text-7xl text-3xl lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center lg:pt-1 pt-20">
             Projects
           </h1>
           <div className="w-[8.5rem] h-[32px] relative">
-            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full left-[35rem] blur-sm" />
-            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full left-[35.6rem]" />
+            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full lg:left-[35rem] left-[7.8rem] blur-sm" />
+            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full lg:left-[35.6rem] left-[7.8rem]" />
 
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>

@@ -15,7 +15,7 @@ const ToggleSwitch = () => {
 
   return (
     <div>
-      <label className="absolute top-1 right-2 transform scale-40">
+      <label className="absolute top-1 lg:right-2 right-0 transform scale-40">
         <input
           ref={inputRef}
           className="slider"
