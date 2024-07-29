@@ -37,14 +37,6 @@ const Contact = () => {
           </a>
 
           <a
-            className="lg:w-24 w-20 mt-3"
-            href="https://buymeacoffee.com/kavyansh"
-            target="_blank"
-          >
-            <img src={bmc} alt="" />
-          </a>
-
-          <a
             className="lg:w-7 w-7 mt-3"
             href="https://github.com/kavyansh18"
             target="_blank"
