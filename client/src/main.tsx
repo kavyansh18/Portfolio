@@ -7,6 +7,7 @@ import {
   Routes,
 } from "react-router-dom";
 import { Homepg } from './Pages/Homepg';
+import Contact from './Pages/Contact'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Homepg />} />
         <Route path="/form" element={<Homepg />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   </React.StrictMode>,
