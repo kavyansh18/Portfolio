@@ -160,7 +160,7 @@ const Experience = () => {
                     xs: "0.8rem", 
                     lg: "1rem"   
                   }, }}>
-                  10th June'24 - 9th June'24
+                  10th June'24 - 9th July'24
                 </Typography>
                 <Typography sx={{ color: "#DFF5FF", fontSize: {
                     xs: "0.7rem", 
