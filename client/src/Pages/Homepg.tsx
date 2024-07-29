@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Contact from '../Pages/Contact.tsx'
+import Contact from "../Pages/Contact.tsx";
 import { Gallary } from "./Gallary.tsx";
 import ToggleSwitch from "../Components/ToggleSwitch";
 import Navbaar from "../Components/Navbaar.tsx";
@@ -34,7 +34,8 @@ import stackoverflow from "../assets/stack-overflow.jpeg";
 import markdown from "../assets/markdown.png";
 import todo from "../assets/todo.png";
 import ams from "../assets/ams.jpeg";
-import vite from '../assets/vite.svg'
+import vite from "../assets/vite.svg";
+import zk from "../assets/zk.png";
 import {
   CardBody,
   CardContainer,
@@ -42,8 +43,8 @@ import {
 } from "../Components/UI/3D-card.tsx";
 import { Link } from "react-router-dom";
 import "../index.css";
-import bnb from '../assets/beatsnbytes.png'
-import "../Components/UI/cards.css"
+import bnb from "../assets/beatsnbytes.png";
+import "../Components/UI/cards.css";
 
 const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows and Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
@@ -53,13 +54,12 @@ const sectionVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
-
 export function Homepg() {
   const [textGenerated, setTextGenerated] = useState(false);
   const [bounce, setBounce] = useState(true);
   const [downloaded, setDownloaded] = useState(false);
 
-  function handleHover(isHovering:boolean) {
+  function handleHover(isHovering: boolean) {
     const container = document.querySelector(".animate-scrolling");
     if (isHovering) {
       container?.classList.add("paused");
@@ -112,7 +112,6 @@ export function Homepg() {
       <div className="z-50">
         <Navbaar />
       </div>
-
       <HeroHighlight>
         <motion.h1
           initial={{
@@ -190,40 +189,38 @@ export function Homepg() {
             </div>
             {textGenerated && (
               <div className="flex w-full justify-center lg:justify-start items-center lg:items-start">
-              <motion.button
-                onClick={handleDownloadResume}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}
-                className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-slate-400 transition-colors mt-6 lg:ml-16 ml-0"
-              >
-                {downloaded ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                ) : (
-                  "Download Resume"
-                )}
-              </motion.button>
+                <motion.button
+                  onClick={handleDownloadResume}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}
+                  className="inline-flex h-10 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-5 font-medium text-slate-400 transition-colors mt-6 lg:ml-16 ml-0"
+                >
+                  {downloaded ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  ) : (
+                    "Download Resume"
+                  )}
+                </motion.button>
               </div>
             )}
           </div>
         </div>
       </HeroHighlight>
-
       <ToggleSwitch />
-
       <div className="h-[75rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <motion.div
@@ -299,7 +296,9 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={js} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[10px]">JavaScript</div>
+                <div className="text-white lg:text-lg text-[10px]">
+                  JavaScript
+                </div>
               </a>
               <a
                 href=""
@@ -309,7 +308,9 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={ts} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[10px]">TypeScript</div>
+                <div className="text-white lg:text-lg text-[10px]">
+                  TypeScript
+                </div>
               </a>
 
               <a
@@ -346,7 +347,7 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img className="lg:w-20 w-12"  src={html} alt="" />
+                  <img className="lg:w-20 w-12" src={html} alt="" />
                 </div>
                 <div className="text-white">HTML</div>
               </a>
@@ -357,9 +358,11 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img className="lg:w-20 w-12"  src={vcss} alt="" />
+                  <img className="lg:w-20 w-12" src={vcss} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[10px]">Vanilla CSS</div>
+                <div className="text-white lg:text-lg text-[10px]">
+                  Vanilla CSS
+                </div>
               </a>
 
               <a
@@ -368,9 +371,11 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img className="lg:w-20 w-12"  src={tcss} alt="" />
+                  <img className="lg:w-20 w-12" src={tcss} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[8px]">Tailwind CSS</div>
+                <div className="text-white lg:text-lg text-[8px]">
+                  Tailwind CSS
+                </div>
               </a>
 
               <a
@@ -379,7 +384,7 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img className="lg:w-20 w-12"  src={react} alt="" />
+                  <img className="lg:w-20 w-12" src={react} alt="" />
                 </div>
                 <div className="text-white lg:text-lg text-sm">React js</div>
               </a>
@@ -401,7 +406,7 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img className="lg:w-20 w-12"  src={node} alt="" />
+                  <img className="lg:w-20 w-12" src={node} alt="" />
                 </div>
                 <div className="text-white lg:text-lg text-sm">Node js</div>
               </a>
@@ -412,7 +417,7 @@ export function Homepg() {
                 className="flex flex-col justify-center items-center"
               >
                 <div>
-                  <img className="lg:w-20 w-12"  src={mdb} alt="" />
+                  <img className="lg:w-20 w-12" src={mdb} alt="" />
                 </div>
                 <div className="text-white lg:text-lg text-[9px]">Mongo DB</div>
               </a>
@@ -515,6 +520,57 @@ export function Homepg() {
               onMouseLeave={() => handleHover(false)}
             >
               <CardContainer className="inter-var flex-shrink-0 ml-[18rem]">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-5 border">
+                  <CardItem
+                    translateZ="50"
+                    className="lg:text-[14px] text-[16px] font-bold text-neutral-600 dark:text-white"
+                  >
+                    ZkReUseIt: Revolutionizing the resale market with
+                    Zero-Knowledge Proofs
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-[11px] w-auto mt-2 dark:text-neutral-300"
+                  >
+                    ZKREuseit is a decentralized marketplace using the Reclaim
+                    Protocol and Polygon zkEVM to ensure user privacy, low-cost
+                    transactions, and enhanced security, eliminating
+                    intermediaries for a fairer resale platform.
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <img
+                      src={zk}
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="flex justify-between items-center mt-5">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://github.com/kavyansh18/Zk-ReUseIt"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://github.com/kavyansh18/Zk-ReUseIt"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Source Code
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+
+              <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
@@ -825,7 +881,11 @@ export function Homepg() {
                     translateZ="60"
                     className="text-neutral-500 text-[12px] w-auto mt-2 dark:text-neutral-300"
                   >
-                    it is a web app for offline music playback, storing songs locally on your device. It features an intuitive interface, playlist management, and supports various audio formats. Built with React.js and Node.js, it ensures a seamless, internet-free music experience.
+                    it is a web app for offline music playback, storing songs
+                    locally on your device. It features an intuitive interface,
+                    playlist management, and supports various audio formats.
+                    Built with React.js and Node.js, it ensures a seamless,
+                    internet-free music experience.
                   </CardItem>
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
@@ -860,37 +920,38 @@ export function Homepg() {
               </CardContainer>
             </div>
           </div>
-          
+
           <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={sectionVariants}
-          transition={{ duration: 1 }}
-        >
-          <div className="w-full flex flex-wrap justify-center gap-6 mt-8">
-          <a className="relative" href="https://github.com/kavyansh18?tab=repositories" target="_blank">
-            <span className="absolute top-0 left-0 mt-1 ml-1 h-full rounded bg-red"></span>
-            <span className="fold-bold relative inline-block h-full rounded border-b-4 border-r-4 border-blue-300 bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-blue-800 hover:text-white">
-              More Projects
-            </span>
-          </a>
-          </div>
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={sectionVariants}
+            transition={{ duration: 1 }}
+          >
+            <div className="w-full flex flex-wrap justify-center gap-6 mt-8">
+              <a
+                className="relative"
+                href="https://github.com/kavyansh18?tab=repositories"
+                target="_blank"
+              >
+                <span className="absolute top-0 left-0 mt-1 ml-1 h-full rounded bg-red"></span>
+                <span className="fold-bold relative inline-block h-full rounded border-b-4 border-r-4 border-blue-300 bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-blue-800 hover:text-white">
+                  More Projects
+                </span>
+              </a>
+            </div>
           </motion.div>
         </motion.div>
       </div>
-
-      //export 
+      //export
       <div>
         <Experience />
       </div>
-
       <div>
-      <Gallary />
+        <Gallary />
       </div>
-
       <div>
-      <Contact />
+        <Contact />
       </div>
     </div>
   );
