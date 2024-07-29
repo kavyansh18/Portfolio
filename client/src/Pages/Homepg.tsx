@@ -43,6 +43,7 @@ import {
 import { Link } from "react-router-dom";
 import "../index.css";
 import bnb from '../assets/beatsnbytes.png'
+import "../Components/UI/cards.css"
 
 const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows and Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
@@ -514,7 +515,7 @@ export function Homepg() {
               onMouseLeave={() => handleHover(false)}
             >
               <CardContainer className="inter-var flex-shrink-0 ml-[18rem]">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
                     className="text-lg font-bold text-neutral-600 dark:text-white"
@@ -533,9 +534,9 @@ export function Homepg() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={massMailer}
-                      height={1000}
-                      width={1000}
-                      className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -563,7 +564,7 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -582,9 +583,9 @@ export function Homepg() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={feedbackform}
-                      height={1000}
-                      width={1000}
-                      className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -612,7 +613,7 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
                     className="text-lg font-bold text-neutral-600 dark:text-white"
@@ -632,9 +633,9 @@ export function Homepg() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={stackoverflow}
-                      height={1000}
-                      width={1000}
-                      className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -662,7 +663,7 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -682,9 +683,9 @@ export function Homepg() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={markdown}
-                      height={1000}
-                      width={1000}
-                      className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -712,7 +713,7 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
                     className="text-lg font-bold text-neutral-600 dark:text-white"
@@ -731,9 +732,9 @@ export function Homepg() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={todo}
-                      height={1000}
-                      width={1000}
-                      className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -761,7 +762,7 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -782,9 +783,9 @@ export function Homepg() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={ams}
-                      height={1000}
-                      width={1000}
-                      className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -812,7 +813,7 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -829,9 +830,9 @@ export function Homepg() {
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
                       src={bnb}
-                      height={1000}
-                      width={1000}
-                      className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
