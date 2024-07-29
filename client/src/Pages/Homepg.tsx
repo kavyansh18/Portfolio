@@ -515,17 +515,17 @@ export function Homepg() {
               onMouseLeave={() => handleHover(false)}
             >
               <CardContainer className="inter-var flex-shrink-0 ml-[18rem]">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
-                    className="text-lg font-bold text-neutral-600 dark:text-white"
+                    className="text-[16px] font-bold text-neutral-600 dark:text-white"
                   >
                     MassMailer: Reach Your Audience with One Click
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-[12px] w-auto mt-2 dark:text-neutral-300"
                   >
                     Our massmailer simplifies email marketing with personalized
                     messages to multiple recipients quickly and easily. Ideal
@@ -536,7 +536,7 @@ export function Homepg() {
                       src={massMailer}
                       // height={1000}
                       // width={1000}
-                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="cardcss lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -564,17 +564,17 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-[16px] font-bold text-neutral-600 dark:text-white"
                   >
                     B&0 Feedback Form
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-[12px] w-auto mt-2 dark:text-neutral-300"
                   >
                     This project was my internship task, involving the creation
                     of a user-friendly feedback form to gather insights on new
@@ -585,7 +585,7 @@ export function Homepg() {
                       src={feedbackform}
                       // height={1000}
                       // width={1000}
-                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
+                      className=" lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -613,17 +613,17 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
-                    className="text-lg font-bold text-neutral-600 dark:text-white"
+                    className="text-[12px] font-bold text-neutral-600 dark:text-white"
                   >
                     StackOverflow
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-[12px] w-auto mt-2 dark:text-neutral-300"
                   >
                     Stack Overflow-like service as my internship project using
                     the MERN stack. This platform enables users to ask
@@ -635,7 +635,7 @@ export function Homepg() {
                       src={stackoverflow}
                       // height={1000}
                       // width={1000}
-                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem  object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -663,17 +663,17 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-[16px] font-bold text-neutral-600 dark:text-white"
                   >
                     Quick MarkDown Preview
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-[12px] w-auto mt-2 dark:text-neutral-300"
                   >
                     Designed to provide real-time rendering of Markdown text
                     into HTML. Using React's built-in libraries and custom
@@ -685,7 +685,7 @@ export function Homepg() {
                       src={markdown}
                       // height={1000}
                       // width={1000}
-                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -713,17 +713,17 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
-                    className="text-lg font-bold text-neutral-600 dark:text-white"
+                    className="text-[16px] font-bold text-neutral-600 dark:text-white"
                   >
                     ToDo Manager using Context
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-[12px] w-auto mt-2 dark:text-neutral-300"
                   >
                     Targetting React.js and Context API, ensuring tasks are
                     securely stored in local storage. This feature allows users
@@ -734,7 +734,7 @@ export function Homepg() {
                       src={todo}
                       // height={1000}
                       // width={1000}
-                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -762,17 +762,17 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-[16px] font-bold text-neutral-600 dark:text-white"
                   >
                     Airport Management System
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-[12px] w-auto mt-2 dark:text-neutral-300"
                   >
                     The Airport Management System enhances aircraft and customer
                     management using modern technologies. It streamlines data
@@ -785,7 +785,7 @@ export function Homepg() {
                       src={ams}
                       // height={1000}
                       // width={1000}
-                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
@@ -813,17 +813,17 @@ export function Homepg() {
               </CardContainer>
 
               <CardContainer className="inter-var flex-shrink-0">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-auto w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-[16px] font-bold text-neutral-600 dark:text-white"
                   >
                     Beats&Bytes
                   </CardItem>
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-[13px] w-auto mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-[12px] w-auto mt-2 dark:text-neutral-300"
                   >
                     it is a web app for offline music playback, storing songs locally on your device. It features an intuitive interface, playlist management, and supports various audio formats. Built with React.js and Node.js, it ensures a seamless, internet-free music experience.
                   </CardItem>
@@ -832,7 +832,7 @@ export function Homepg() {
                       src={bnb}
                       // height={1000}
                       // width={1000}
-                      className="cardcss lg:h-[10rem] lg:w-[10rem] h-[17rem] w-[19rem]  object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem object-cover rounded-xl group-hover/card:shadow-xl"
                       alt="thumbnail"
                     />
                   </CardItem>
