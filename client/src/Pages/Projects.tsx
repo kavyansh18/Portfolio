@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import massMailer from "../assets/mass-mailer2.jpeg";
 import feedbackform from "../assets/feedback-form1.jpeg";
 import stackoverflow from "../assets/stack-overflow.jpeg";
@@ -8,6 +7,8 @@ import ams from "../assets/ams.jpeg";
 import bnb from "../assets/beatsnbytes.png";
 import zk from "../assets/zk.png";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
+import {useEffect} from 'react'
 import {
   CardBody,
   CardContainer,
@@ -15,10 +16,10 @@ import {
 } from "../Components/UI/3D-card.tsx";
 
 const Projects = () => {
-    const sectionVariants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0 },
-      };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
       function handleHover(isHovering: boolean) {
         const container = document.querySelector(".animate-scrolling");
@@ -30,15 +31,11 @@ const Projects = () => {
       }
   return (
     <div>
-              //PROJECTS
         <motion.div
-          className="z-20 "
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={sectionVariants}
-          transition={{ duration: 1 }}
-        >
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+      >
           <h1 className="md:text-7xl text-3xl lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center lg:pt-1 pt-4">
             Projects
           </h1>
@@ -48,16 +45,13 @@ const Projects = () => {
 
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
-        </motion.div>
+          </motion.div>
         <div className="flex justify-center items-center">
         <motion.div
-          className="z-20"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={sectionVariants}
-          transition={{ duration: 1 }}
-        >
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
+          >
             <div
               className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-screen px-auto justify-content align-items "
               style={{ width: "max-content" }}
@@ -464,15 +458,13 @@ const Projects = () => {
                 </CardBody>
               </CardContainer>
             </div>
-          </motion.div>
+            </motion.div>
           </div>
 
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={sectionVariants}
-            transition={{ duration: 1 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
           >
             <div className="w-full flex flex-wrap justify-center gap-6 my-12">
               <a href="https://github.com/kavyansh18?tab=repositories" type="button">
@@ -482,7 +474,7 @@ const Projects = () => {
                 </span>
                 </a>
             </div>
-          </motion.div>
+            </motion.div>
          
     </div>
   )

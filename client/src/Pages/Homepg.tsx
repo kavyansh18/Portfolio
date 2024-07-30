@@ -46,7 +46,7 @@ import "../index.css";
 import bnb from "../assets/beatsnbytes.png";
 import "../Components/UI/cards.css";
 
-const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows and Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths.
+const words = `I am from Gurgaon, Haryana. Exploring and learning as a 2nd year undergrade with full of excitement and urge to move forward and conquer my field of interest.
 `;
 
 const sectionVariants = {
