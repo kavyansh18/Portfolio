@@ -1,4 +1,3 @@
-import bmc from "../assets/bmc.png";
 import ig from "../assets/ig.svg";
 import github from "../assets/github 2.svg";
 import twitter from "../assets/twitter.svg";
