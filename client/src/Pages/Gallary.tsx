@@ -14,7 +14,9 @@ import code from "../assets/gallary/code.png";
 import genesis from "../assets/gallary/genesis.png";
 import shar from "../assets/gallary/shardeum2.png";
 import crypto from "../assets/gallary/crypto.png";
-import hh from "../assets/gallary/hh.jpeg";
+import hh1 from "../assets/gallary/hh1.jpg";
+import hh2 from "../assets/gallary/hh2.jpg";
+import hh3 from "../assets/gallary/hh3.jpg";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -37,15 +39,43 @@ export function Gallary() {
   );
 }
 
-const SkeletonCS = () => {
+const Skeleton03 = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Coming Soon
+        The thumbs up dev
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
-       Solana HH Blr
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+       Clicked at the Solana Hacker House Bengaluru'24
+      </p>
+    </div>
+  );
+};
+
+const Skeleton02 = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        The round table kt
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+       Interacting and learning a lot from seniors and ofc with fun at SHH'24
+      </p>
+    </div>
+  );
+};
+
+const Skeleton01 = () => {
+  return (
+    <div>
+      <p className="font-bold md:text-4xl text-xl text-white">
+        The squad everywhere I go
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+       Best people to be arround and build together
       </p>
     </div>
   );
@@ -57,8 +87,8 @@ const Skeleton0 = () => {
       <p className="font-bold md:text-4xl text-xl text-white">
         Crypto Traders Hangout
       </p>
-      <p className="font-normal text-base text-white text-sm"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal text-white text-sm"></p>
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         Met some amazing crypto traders who shared valuable tips and strategies.
         Their passion and knowledge were inspiring. It was great learning from
         them with a coffee at Starbucks, Chennai
@@ -74,7 +104,7 @@ const SkeletonOne = () => {
         100xdevs Meetup, New Delhi
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         I had the chance to learn from some of the best people in tech: Striver,
         Harkirat, Mannu Paji, and Sameer. They were all amazing and shared a lot
         of great knowledge.
@@ -88,7 +118,7 @@ const SkeletonTwo = () => {
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">The Core Team</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         This group is fantastic; everyone motivates and enjoys each other's
         company. We have a lot of fun together, and you'll see us together
         often.
@@ -102,7 +132,7 @@ const SkeletonThree = () => {
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">The TPH Team</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         These amazing people introduced me to advanced tech, continuously
         guiding and helping me. Their mentorship has been invaluable in my
         growth and learning. They are the best seniors.
@@ -118,7 +148,7 @@ const SkeletonFour = () => {
         Gitogether, New Delhi
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         I connected with some cool developers and industry specialists and had a
         great knowledge transfer session on Git and GitHub.
       </p>
@@ -131,7 +161,7 @@ const SkeletonFive = () => {
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">Bak Bak</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         My college friends and I are trying to come up with a project idea that
         will impress our professor and be useful for us later in getting good
         grades.
@@ -147,7 +177,7 @@ const SkeletonSix = () => {
         Presenting our project to professor
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         It’s impressive that our English teacher understands our course and gave
         us a project to build a website to help first-year students. Most
         colleges in India don’t teach coding to CSE undergraduates in their
@@ -162,7 +192,7 @@ const SkeletonSeven = () => {
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">HTB Team</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         The Hack The Box team is fantastic—hardworking and relaxed, with a great
         attitude.
       </p>
@@ -175,7 +205,7 @@ const SkeletonEight = () => {
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">HackVerse' 24</p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         Participated in the Hackverse hackathon in Chennai, blockchain based
         hack. Had a great time learning and developing cool stuff over the two
         days.
@@ -191,7 +221,7 @@ const SkeletonNine = () => {
         Farewell to TPH seniors
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         We juniors organized a farewell for the TPH founding team, and we had an
         amazing time hanging out with everyone.
       </p>
@@ -206,7 +236,7 @@ const SkeletonTen = () => {
         No better feeling than this
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         CODE EVERYDAY FOLKS !
       </p>
     </div>
@@ -220,7 +250,7 @@ const SkeletonEleven = () => {
         Genesis Hackathon' 24
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         We TPH x SRMIST organized the "GENESIS" PAN India hackathon, which was a
         huge success for our club. We offered one of the biggest prize pools
         ever at SRM University, totaling 5 lakhs. I also helped others with what
@@ -237,7 +267,7 @@ const SkeletonTwelve = () => {
         Shardeum Meetup, Chennai
       </p>
       <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
+      <p className="font-normal my-4 max-w-lg text-neutral-200 text-sm lg:text-m">
         I met some amazing people who shared their knowledge and experience with
         me. It was a great learning experience and my first step into
         blockchain.
@@ -249,22 +279,22 @@ const SkeletonTwelve = () => {
 const cards = [
   {
     id: -3,
-    content: <SkeletonCS />,
+    content: <Skeleton03 />,
     className: "col-span-1",
-    thumbnail: hh,
+    thumbnail: hh1,
   },
   {
     id: -2,
-    content: <SkeletonCS />,
+    content: <Skeleton02 />,
     className: "col-span-1",
-    thumbnail: hh,
+    thumbnail: hh2,
   },
 
   {
     id: -1,
-    content: <SkeletonCS />,
+    content: <Skeleton01 />,
     className: "col-span-1",
-    thumbnail: hh,
+    thumbnail: hh3,
   },
   {
     id: 0,
