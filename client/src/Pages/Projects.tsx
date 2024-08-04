@@ -5,6 +5,9 @@ import markdown from "../assets/markdown.png";
 import todo from "../assets/todo.png";
 import ams from "../assets/ams.jpeg";
 import bnb from "../assets/beatsnbytes.png";
+import uc from "../assets/uc.png";
+import pp from "../assets/pp.png";
+import cc from "../assets/cc.png";
 import zk from "../assets/zk.png";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
@@ -58,6 +61,146 @@ const Projects = () => {
               onMouseEnter={() => handleHover(true)}
               onMouseLeave={() => handleHover(false)}
             >
+              <CardContainer className="inter-var flex-shrink-0">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-5 border">
+                  <CardItem
+                    translateZ="50"
+                    className="lg:text-[14px] text-[16px] font-bold text-neutral-600 dark:text-white"
+                  >
+                    UniClubs: Find ur type!
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-[11px] w-auto mt-2 dark:text-neutral-300"
+                  >
+                    This platform lists all the clubs in our college, providing links so that students can easily find and choose the right club for them. This is just the initial rollout. In the future, I plan to add features like club registration, event management for each club, and more.
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <img
+                      src={uc}
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="flex justify-between items-center mt-5">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://uni-clubs.vercel.app/"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://github.com/kavyansh18/UniClubs"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Source Code
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+
+              <CardContainer className="inter-var flex-shrink-0">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-5 border">
+                  <CardItem
+                    translateZ="50"
+                    className="lg:text-[14px] text-[16px] font-bold text-neutral-600 dark:text-white"
+                  >
+                    ChainCharity: Where humanity meets
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-[11px] w-auto mt-2 dark:text-neutral-300"
+                  >
+                    Chain Charity connects NGOs with donors using the Okto SDK for secure, transparent transactions. Our platform simplifies donations, especially for NRIs, overcoming banking and legal hurdles.
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <img
+                      src={cc}
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="flex justify-between items-center mt-5">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://chain-charity.vercel.app/"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://github.com/kavyansh18/chain-charity"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Source Code
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+
+              <CardContainer className="inter-var flex-shrink-0">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-5 border">
+                  <CardItem
+                    translateZ="50"
+                    className="lg:text-[14px] text-[16px] font-bold text-neutral-600 dark:text-white"
+                  >
+                    Personal Portfolio
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-[11px] w-auto mt-2 dark:text-neutral-300"
+                  >
+                    You are on it!
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <img
+                      src={pp}
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="flex justify-between items-center mt-5">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://portfolio-kavyansh.vercel.app/"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://github.com/kavyansh18/Portfolio"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Source Code
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
               <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-5 border">
                   <CardItem
