@@ -4,6 +4,8 @@ import twitter from "../assets/twitter.svg";
 import ldn from "../assets/ldn.svg";
 import email from "../assets/email.svg";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import ReactGA from 'react-ga'
 
 const sectionVariants = {
     hidden: { opacity: 0, y: 70 },
@@ -11,6 +13,10 @@ const sectionVariants = {
   };
 
 const Contact = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname)
+  })
+  
   return (
     <motion.div
           initial="hidden"

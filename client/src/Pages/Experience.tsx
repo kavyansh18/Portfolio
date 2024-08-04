@@ -13,6 +13,8 @@ import htb from "../assets/htb.png";
 import { motion } from "framer-motion";
 import GithubCalender from "../Components/GithubCalender.tsx";
 import "../Components/UI/GitHubContributionGraph.css";
+import { useEffect } from "react";
+import ReactGA from 'react-ga'
 
 interface CustomTimelineDotProps {
   icon: string;
@@ -46,6 +48,11 @@ const sectionVariants = {
 };
 
 const Experience = () => {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname)
+  })
+
   return (
     <div className="h-[72rem] w-full rounded-md bg-neutral-950 relative flex flex-col antialiased">
       <div className="max-w-2xl mx-auto p-4">

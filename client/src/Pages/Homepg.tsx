@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ReactGA from 'react-ga'
 import Contact from "../Pages/Contact.tsx";
 import { Gallary } from "./Gallary.tsx";
 //import ToggleSwitch from "../Components/ToggleSwitch";
@@ -57,6 +58,11 @@ const sectionVariants = {
 };
 
 export function Homepg() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname)
+  })
+  
   const [textGenerated, setTextGenerated] = useState(false);
   const [bounce, setBounce] = useState(true);
   const [downloaded, setDownloaded] = useState(false);

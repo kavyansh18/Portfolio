@@ -11,7 +11,8 @@ import cc from "../assets/cc.png";
 import zk from "../assets/zk.png";
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
-import {useEffect} from 'react'
+import { useEffect } from "react";
+import ReactGA from 'react-ga'
 import {
   CardBody,
   CardContainer,
@@ -22,6 +23,7 @@ const Projects = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactGA.pageview(window.location.pathname)
   }, []);
 
       function handleHover(isHovering: boolean) {

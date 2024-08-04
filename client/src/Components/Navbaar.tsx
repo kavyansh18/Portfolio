@@ -7,7 +7,7 @@ const Navbaar = () => {
       <div>
         <NavLink
           to="/contact"
-          className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-2 dark:p-[1px] p-[2px]"
+          className="relative inline-flex h-10 overflow-hidden rounded-full focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-2 dark:p-[1px] p-[2px]"
           // activeClassName="active-link-class" // Add this if you want to apply active styles
           type="button"
         >

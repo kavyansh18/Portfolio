@@ -9,6 +9,9 @@ import {
 import { Homepg } from './Pages/Homepg';
 import Contact from './Pages/Contact'
 import Projects from "./Pages/Projects";
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('G-Y6X1755VPZ')
 
 ReactDOM.render(
   <React.StrictMode>

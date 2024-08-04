@@ -17,6 +17,8 @@ import crypto from "../assets/gallary/crypto.png";
 import hh1 from "../assets/gallary/hh1.jpg";
 import hh2 from "../assets/gallary/hh2.jpg";
 import hh3 from "../assets/gallary/hh3.jpg";
+import { useEffect } from "react";
+import ReactGA from 'react-ga'
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -24,6 +26,11 @@ const sectionVariants = {
 };
 
 export function Gallary() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname)
+  })
+  
   return (
     <div className="lg:h-[45rem] h-[70rem] w-full bg-zinc-950">
       <motion.div
