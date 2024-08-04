@@ -46,8 +46,7 @@ import "../index.css";
 import bnb from "../assets/beatsnbytes.png";
 import "../Components/UI/cards.css";
 
-const words = `I am from Gurgaon, Haryana. Exploring and learning as a 2nd year undergrade with full of excitement and urge to move forward and conquer my field of interest.
-`;
+const words = `I am from Gurgaon, Haryana. Exploring and learning as a 2nd year undergrade with full of excitement and urge to move forward and conquer my field of interest.     <"Make it!"> `;
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
