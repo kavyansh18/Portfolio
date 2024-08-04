@@ -11,7 +11,7 @@ import Contact from './Pages/Contact'
 import Projects from "./Pages/Projects";
 import ReactGA from 'react-ga'
 
-ReactGA.initialize('G-Y6X1755VPZ')
+ReactGA.initialize('G-JQMYG9WJLE')
 
 ReactDOM.render(
   <React.StrictMode>
