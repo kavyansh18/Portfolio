@@ -34,9 +34,9 @@ const Pfp: React.FC = () => {
         <div className="cartao cartao0">
           <div className="elemento__interno-borda">
             <div className="container">
-              <h2 className="text-[12px] mt-3 bubble-text text">
+              {/* <h2 className="text-[12px] mt-3 bubble-text text">
                 Let's talk about Virat & code
-              </h2>
+              </h2> */}
             </div>
             <div className="caixa__icones">
               <a
