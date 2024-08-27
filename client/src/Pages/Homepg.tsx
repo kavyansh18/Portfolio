@@ -40,6 +40,10 @@ import zk from "../assets/zk.png";
 import uc from "../assets/uc.png";
 import pp from "../assets/pp.png";
 import cc from "../assets/cc.png";
+import java from "../assets/java.png";
+import exp from "../assets/express.svg";
+import appwrite from "../assets/appwrite.svg";
+import postman from "../assets/postman.svg";
 import {
   CardBody,
   CardContainer,
@@ -331,6 +335,18 @@ export function Homepg() {
                 </div>
                 <div className="text-white lg:text-lg text-[11px]">MySQL</div>
               </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img className="lg:w-20 w-12" src={java} alt="" />
+                </div>
+                <div className="text-white lg:text-lg text-[11px]">Java</div>
+              </a>
+
             </div>
           </div>
         </motion.div>
@@ -429,6 +445,18 @@ export function Homepg() {
                 </div>
                 <div className="text-white lg:text-lg text-[9px]">Mongo DB</div>
               </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img className="lg:w-20 w-12" src={exp} alt="" />
+                </div>
+                <div className="text-white lg:text-lg text-[9px]">Express JS</div>
+              </a>
+
             </div>
           </div>
         </motion.div>
@@ -490,6 +518,29 @@ export function Homepg() {
                 </div>
                 <div className="text-white">WordPress</div>
               </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img className="w-20 mb-1" src={appwrite} alt="" />
+                </div> 
+                <div className="text-white">Appwrite</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img className="w-20 mb-1" src={postman} alt="" />
+                </div>
+                <div className="text-white">Postman API</div>
+              </a>
+
             </div>
           </div>
         </motion.div>

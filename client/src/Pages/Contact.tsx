@@ -51,7 +51,7 @@ const Contact = () => {
 
           <a
             className="lg:w-7 w-7 mt-3"
-            href="https://x.com/the_kavyansh"
+            href="https://x.com/0xkavyansh"
             target="_blank"
           >
             <img src={twitter} alt="" />

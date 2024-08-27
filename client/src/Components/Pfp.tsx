@@ -60,7 +60,7 @@ const Pfp: React.FC = () => {
                 <i className="fa fa-linkedin" aria-hidden="true"></i>
               </a>
               <a
-                href="https://twitter.com/the_kavyansh"
+                href="https://twitter.com/0xkavyansh"
                 target="_blank"
                 rel="noopener noreferrer"
               >
