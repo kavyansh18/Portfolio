@@ -44,6 +44,7 @@ import java from "../assets/java.png";
 import exp from "../assets/express.svg";
 import appwrite from "../assets/appwrite.svg";
 import postman from "../assets/postman.svg";
+import krypt from "../assets/krypt.png";
 import {
   CardBody,
   CardContainer,
@@ -663,6 +664,53 @@ export function Homepg() {
                       translateZ={20}
                       as={Link}
                       to="https://github.com/kavyansh18/chain-charity"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Source Code
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+
+              <CardContainer className="inter-var flex-shrink-0">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-5 border">
+                  <CardItem
+                    translateZ="50"
+                    className="lg:text-[14px] text-[16px] font-bold text-neutral-600 dark:text-white"
+                  >
+                    Krypt: Send Crypto across the world
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-[11px] w-auto mt-2 dark:text-neutral-300"
+                  >
+                   This NFT marketplace ensures secure, private, and fast transactions with the best exchange rates, making it the top choice for trading crypto assets.
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <img
+                      src={krypt}
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="flex justify-between items-center mt-5">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://krypto-iota.vercel.app/"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://github.com/kavyansh18/krypto"
                       target="_blank"
                       className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                     >
