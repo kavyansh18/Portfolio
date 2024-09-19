@@ -45,6 +45,7 @@ import exp from "../assets/express.svg";
 import appwrite from "../assets/appwrite.svg";
 import postman from "../assets/postman.svg";
 import krypt from "../assets/krypt.png";
+import pgsql from "../assets/pgsql.png";
 import {
   CardBody,
   CardContainer,
@@ -247,9 +248,7 @@ export function Homepg() {
             Tech Stacks
           </h1>
           <div className="w-[8.5rem] h-[32px] relative">
-            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full lg:left-[35rem] left-[7.8rem] blur-sm" />
-            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full lg:left-[35rem] left-[7.8rem]" />
-
+            
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
         </motion.div>
@@ -359,7 +358,7 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2">
+          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-0 mt-20">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Web Technologies
@@ -458,6 +457,17 @@ export function Homepg() {
                 <div className="text-white lg:text-lg text-[9px]">Express JS</div>
               </a>
 
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img className="lg:w-20 w-12" src={pgsql} alt="" />
+                </div>
+                <div className="text-white lg:text-lg text-[9px]">PostgreSQL</div>
+              </a>
+
             </div>
           </div>
         </motion.div>
@@ -469,7 +479,7 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-0 mt-24">
+          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-0 mt-44">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Tools / Platforms
@@ -554,13 +564,11 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <h1 className="md:text-7xl text-3xl lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center lg:pt-1 pt-20">
+          <h1 className="md:text-7xl text-3xl lg:text-4xl font-bold text-white relative z-20 flex items-center justify-center lg:pt-1 pt-[20rem]">
             Projects
           </h1>
           <div className="w-[8.5rem] h-[32px] relative">
-            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full lg:left-[35rem] left-[7.8rem] blur-sm" />
-            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full lg:left-[35.6rem] left-[7.8rem]" />
-
+        
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
         </motion.div>

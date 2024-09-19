@@ -47,7 +47,7 @@ const Projects = () => {
           </h1>
           <div className="w-[8.5rem] h-[32px] relative">
             <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full lg:left-[35.6rem] left-[7.8rem] blur-sm" />
-            <div className="absolute inset-x-3 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[3px] w-full lg:left-[35.6rem] left-[7.8rem]" />
+
 
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
