@@ -47,6 +47,7 @@ import postman from "../assets/postman.svg";
 import krypt from "../assets/krypt.png";
 import pgsql from "../assets/pgsql.png";
 import ucare from "../assets/unicare.png";
+import next from "../assets/nextjs-icon.svg";
 import {
   CardBody,
   CardContainer,
@@ -325,18 +326,6 @@ export function Homepg() {
                   TypeScript
                 </div>
               </a>
-
-              <a
-                href=""
-                target="_blank"
-                className="flex flex-col justify-center items-center"
-              >
-                <div>
-                  <img className="lg:w-20 w-12" src={mysql} alt="" />
-                </div>
-                <div className="text-white lg:text-lg text-[11px]">MySQL</div>
-              </a>
-
               <a
                 href=""
                 target="_blank"
@@ -352,7 +341,7 @@ export function Homepg() {
           </div>
         </motion.div>
         <motion.div
-          className="flex flex-col z-20 mt-32 absolute"
+          className="flex flex-col z-20 mt-16 absolute"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -424,6 +413,16 @@ export function Homepg() {
                 </div>
                 <div className="text-white pt-3 lg:text-m text-sm">Vite</div>
               </a>
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img className="lg:w-20 w-12" src={next} alt="" />
+                </div>
+                <div className="text-white lg:text-lg text-[9px]">Next js</div>
+              </a>
 
               <a
                 href=""
@@ -445,6 +444,17 @@ export function Homepg() {
                   <img className="lg:w-20 w-12" src={mdb} alt="" />
                 </div>
                 <div className="text-white lg:text-lg text-[9px]">Mongo DB</div>
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                className="flex flex-col justify-center items-center"
+              >
+                <div>
+                  <img className="lg:w-20 w-12" src={mysql} alt="" />
+                </div>
+                <div className="text-white lg:text-lg text-[11px]">MySQL</div>
               </a>
 
               <a
@@ -558,7 +568,7 @@ export function Homepg() {
         </motion.div>
         //PROJECTS
         <motion.div
-          className="z-20 mt-[25rem] "
+          className="z-20 mt-[25rem]  "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -1245,7 +1255,7 @@ export function Homepg() {
         </motion.div>
       </div>
       //export
-      <div>
+      <div className="lg:mt-0 mt-44">
         <Experience />
       </div>
       <div>

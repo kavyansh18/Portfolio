@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <div>
         <motion.div
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeOut' }}
       >
@@ -123,7 +123,7 @@ const Projects = () => {
                     translateZ="60"
                     className="text-neutral-500 text-[11px] w-auto mt-2 dark:text-neutral-300"
                   >
-                    This platform lists all the clubs in our college, providing links so that students can easily find and choose the right club for them. This is just the initial rollout. In the future, I plan to add features like club registration, event management for each club, and more.
+                    This platform lists all the clubs in our college, providing links so that students can easily find and choose the right club for them. Users can also check which clubs are currently recruiting and what events are going on in their college.
                   </CardItem>
                   <CardItem translateZ="100" className="w-full mt-4">
                     <img
@@ -496,7 +496,7 @@ const Projects = () => {
                 </CardBody>
               </CardContainer>
 
-              <CardContainer className="inter-var flex-shrink-0">
+              {/* <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
@@ -544,7 +544,7 @@ const Projects = () => {
                     </CardItem>
                   </div>
                 </CardBody>
-              </CardContainer>
+              </CardContainer> */}
 
               <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
@@ -595,7 +595,7 @@ const Projects = () => {
                 </CardBody>
               </CardContainer>
 
-              <CardContainer className="inter-var flex-shrink-0">
+              {/* <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
@@ -644,9 +644,9 @@ const Projects = () => {
                     </CardItem>
                   </div>
                 </CardBody>
-              </CardContainer>
+              </CardContainer> */}
 
-              <CardContainer className="inter-var flex-shrink-0">
+              {/* <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[35rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
@@ -695,7 +695,7 @@ const Projects = () => {
                     </CardItem>
                   </div>
                 </CardBody>
-              </CardContainer>
+              </CardContainer> */}
             </div>
             </motion.div>
           </div>
