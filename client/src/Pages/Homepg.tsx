@@ -32,9 +32,9 @@ import wp from "../assets/wordpress.svg";
 import massMailer from "../assets/mass-mailer2.jpeg";
 import feedbackform from "../assets/feedback-form1.jpeg";
 import stackoverflow from "../assets/stack-overflow.jpeg";
-import markdown from "../assets/markdown.png";
+//import markdown from "../assets/markdown.png";
 import todo from "../assets/todo.png";
-import ams from "../assets/ams.jpeg";
+//import ams from "../assets/ams.jpeg";
 import vite from "../assets/vite.svg";
 import zk from "../assets/zk.png";
 import uc from "../assets/uc.png";
@@ -55,7 +55,7 @@ import {
 } from "../Components/UI/3D-card.tsx";
 import { Link, NavLink } from "react-router-dom";
 import "../index.css";
-import bnb from "../assets/beatsnbytes.png";
+//import bnb from "../assets/beatsnbytes.png";
 import "../Components/UI/cards.css";
 
 const words = `I am from Gurgaon, Haryana. Exploring and learning as a 2nd year undergrade with full of excitement and urge to move forward and conquer my field of interest.     <"Make it!"> `;
@@ -1033,7 +1033,7 @@ export function Homepg() {
                 </CardBody>
               </CardContainer>
 
-              <CardContainer className="inter-var flex-shrink-0">
+              {/* <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
@@ -1081,7 +1081,7 @@ export function Homepg() {
                     </CardItem>
                   </div>
                 </CardBody>
-              </CardContainer>
+              </CardContainer> */}
 
               <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-6 border">
@@ -1132,7 +1132,7 @@ export function Homepg() {
                 </CardBody>
               </CardContainer>
 
-              <CardContainer className="inter-var flex-shrink-0">
+              {/* <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
@@ -1181,9 +1181,9 @@ export function Homepg() {
                     </CardItem>
                   </div>
                 </CardBody>
-              </CardContainer>
+              </CardContainer> */}
 
-              <CardContainer className="inter-var flex-shrink-0">
+              {/* <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
@@ -1232,7 +1232,7 @@ export function Homepg() {
                     </CardItem>
                   </div>
                 </CardBody>
-              </CardContainer>
+              </CardContainer> */}
             </div>
           </div>
 
