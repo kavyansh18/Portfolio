@@ -11,6 +11,7 @@ import cc from "../assets/cc.png";
 import zk from "../assets/zk.png";
 import krypt from "../assets/krypt.png";
 import { Link } from "react-router-dom";
+import ucare from "../assets/unicare.png";
 import { motion } from 'framer-motion';
 import { useEffect } from "react";
 import ReactGA from 'react-ga'
@@ -46,9 +47,6 @@ const Projects = () => {
             Projects
           </h1>
           <div className="w-[8.5rem] h-[32px] relative">
-            <div className="absolute inset-x-5 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full lg:left-[35.6rem] left-[7.8rem] blur-sm" />
-
-
             <div className="absolute w-full bg-black [mask-image:radial-gradient(300px_160px_at_top,transparent_10%,white)]"></div>
           </div>
           </motion.div>
@@ -59,11 +57,59 @@ const Projects = () => {
           transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
           >
             <div
-              className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-screen px-auto justify-content align-items "
+              className="grid grid-cols-1 lg:grid-cols-3 gap-10 w-screen px-auto justify-content align-items lg:scale-[0.98]"
               style={{ width: "max-content" }}
               onMouseEnter={() => handleHover(true)}
               onMouseLeave={() => handleHover(false)}
             >
+              <CardContainer className="inter-var flex-shrink-0">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-5 border">
+                  <CardItem
+                    translateZ="50"
+                    className="lg:text-[14px] text-[16px] font-bold text-neutral-600 dark:text-white"
+                  >
+                    UniCare: Be a HERO!
+                  </CardItem>
+                  <CardItem
+                    as="p"
+                    translateZ="60"
+                    className="text-neutral-500 text-[11px] w-auto mt-2 dark:text-neutral-300"
+                  >
+                    At SRM, urgent requests for blood donors are often shared through unorganized WhatsApp groups. UniCare simplifies this by listing verified donors ready to help. Your mobile number remains private, accessible only to authorized admins, ensuring your privacy is protected.
+
+                  </CardItem>
+                  <CardItem translateZ="100" className="w-full mt-4">
+                    <img
+                      src={ucare}
+                      // height={1000}
+                      // width={1000}
+                      className="cardcss lg:h-[17rem] lg:w-auto h-[17rem] w-[19rem] object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                  <div className="flex justify-between items-center mt-5">
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://uni-care-18.vercel.app/#/"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    >
+                      Try now →
+                    </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      as={Link}
+                      to="https://github.com/kavyansh18/UniCare"
+                      target="_blank"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Source Code
+                    </CardItem>
+                  </div>
+                </CardBody>
+              </CardContainer>
+
               <CardContainer className="inter-var flex-shrink-0">
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] lg:w-[27rem] w-[22rem] lg:h-auto h-[32rem] rounded-xl p-5 border">
                   <CardItem
