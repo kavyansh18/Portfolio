@@ -277,7 +277,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={py} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-sm">Python</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Python</div>
               </a>
 
               <a
@@ -288,7 +288,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={c} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-sm">C</div>
+                <div className="text-white lg:text-[13px] text-[9px]">C</div>
               </a>
 
               <a
@@ -299,7 +299,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={cpp} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-sm">C++</div>
+                <div className="text-white lg:text-[13px] text-[9px]">C++</div>
               </a>
 
               <a
@@ -310,7 +310,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={js} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[10px]">
+                <div className="text-white lg:text-[13px] text-[10px]">
                   JavaScript
                 </div>
               </a>
@@ -322,7 +322,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={ts} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[10px]">
+                <div className="text-white lg:text-[13px] text-[10px]">
                   TypeScript
                 </div>
               </a>
@@ -334,7 +334,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={java} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[11px]">Java</div>
+                <div className="text-white lg:text-[13px] text-[10px]">Java</div>
               </a>
 
             </div>
@@ -348,7 +348,7 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-0 mt-20">
+          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-16 mt-16">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Web Technologies
@@ -363,7 +363,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={html} alt="" />
                 </div>
-                <div className="text-white">HTML</div>
+                <div className="text-white lg:text-[13px] text-[9px]">HTML</div>
               </a>
 
               <a
@@ -374,7 +374,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={vcss} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[10px]">
+                <div className="text-white lg:text-[13px] text-[10px]">
                   Vanilla CSS
                 </div>
               </a>
@@ -387,7 +387,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={tcss} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[8px]">
+                <div className="text-white lg:text-[12px] text-[8px]">
                   Tailwind CSS
                 </div>
               </a>
@@ -400,7 +400,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={react} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-sm">React js</div>
+                <div className="text-white lg:text-[13px] text-sm">React js</div>
               </a>
 
               <a
@@ -411,7 +411,7 @@ export function Homepg() {
                 <div>
                   <img className=" lg:w-[65px] w-[40px]" src={vite} alt="" />
                 </div>
-                <div className="text-white pt-3 lg:text-m text-sm">Vite</div>
+                <div className="text-white pt-3 lg:text-[13px] text-sm">Vite</div>
               </a>
               <a
                 href=""
@@ -421,7 +421,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={next} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[9px]">Next js</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Next js</div>
               </a>
 
               <a
@@ -432,7 +432,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={node} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-sm">Node js</div>
+                <div className="text-white lg:text-[13px] text-sm">Node js</div>
               </a>
 
               <a
@@ -443,7 +443,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={mdb} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[9px]">Mongo DB</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Mongo DB</div>
               </a>
 
               <a
@@ -454,7 +454,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={mysql} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[11px]">MySQL</div>
+                <div className="text-white lg:text-[13px] text-[11px]">MySQL</div>
               </a>
 
               <a
@@ -465,7 +465,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={exp} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[9px]">Express JS</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Express JS</div>
               </a>
 
               <a
@@ -476,7 +476,7 @@ export function Homepg() {
                 <div>
                   <img className="lg:w-20 w-12" src={pgsql} alt="" />
                 </div>
-                <div className="text-white lg:text-lg text-[9px]">PostgreSQL</div>
+                <div className="text-white lg:text-[13px] text-[9px]">PostgreSQL</div>
               </a>
 
             </div>
@@ -490,7 +490,7 @@ export function Homepg() {
           variants={sectionVariants}
           transition={{ duration: 1 }}
         >
-          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-0 mt-44">
+          <div className="flex lg:flex-row flex-col justify-start items-start lg:mx-24 mx-6 lg:gap-12 gap-2 lg:mt-5 mt-44">
             <div>
               <h1 className="bg-gradient-to-t from-blue-600 to-violet-600 bg-clip-text text-transparent text-[20px]">
                 Tools / Platforms
@@ -505,7 +505,7 @@ export function Homepg() {
                 <div>
                   <img src={git} alt="" />
                 </div>
-                <div className="text-white">Git</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Git</div>
               </a>
 
               <a
@@ -516,7 +516,7 @@ export function Homepg() {
                 <div>
                   <img src={github} alt="" />
                 </div>
-                <div className="text-white">Github</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Github</div>
               </a>
 
               <a
@@ -527,7 +527,7 @@ export function Homepg() {
                 <div>
                   <img src={canva} alt="" />
                 </div>
-                <div className="text-white">Canva</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Canva</div>
               </a>
 
               <a
@@ -538,7 +538,7 @@ export function Homepg() {
                 <div>
                   <img src={wp} alt="" />
                 </div>
-                <div className="text-white">WordPress</div>
+                <div className="text-white lg:text-[13px] text-[9px]">WordPress</div>
               </a>
 
               <a
@@ -549,7 +549,7 @@ export function Homepg() {
                 <div>
                   <img className="w-20 mb-1" src={appwrite} alt="" />
                 </div> 
-                <div className="text-white">Appwrite</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Appwrite</div>
               </a>
 
               <a
@@ -560,7 +560,7 @@ export function Homepg() {
                 <div>
                   <img className="w-20 mb-1" src={postman} alt="" />
                 </div>
-                <div className="text-white">Postman API</div>
+                <div className="text-white lg:text-[13px] text-[9px]">Postman API</div>
               </a>
 
             </div>
