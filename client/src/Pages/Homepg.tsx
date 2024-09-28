@@ -1255,7 +1255,7 @@ export function Homepg() {
         </motion.div>
       </div>
       //export
-      <div className="lg:mt-0 mt-44">
+      <div className="lg:mt-0 mt-60">
         <Experience />
       </div>
       <div>
