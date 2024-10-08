@@ -10,6 +10,7 @@ import bno from "../assets/bno.png";
 import nc from "../assets/nc.png";
 import tph from "../assets/tph.png";
 import htb from "../assets/htb.png";
+import bc from "../assets/bc.webp";
 import { motion } from "framer-motion";
 import GithubCalender from "../Components/GithubCalender.tsx";
 import "../Components/UI/GitHubContributionGraph.css";
@@ -201,6 +202,62 @@ const Experience = () => {
                 align="right"
                 variant="body2"
               >
+                Blockchain Club SRM
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector sx={{ minHeight: "4rem" }} />
+                <CustomTimelineDot icon={bc} />
+                <TimelineConnector sx={{ minHeight: "4rem" }} />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "12px", px: 2 }}>
+                <Typography
+                  variant="h6"
+                  component="span"
+                  sx={{ color: "#008DDA", fontSize: {
+                    xs: "1rem", 
+                    lg: "1.6rem"   
+                  }, }}
+                >
+                  Technical Team Member
+                </Typography>
+                <Typography sx={{ color: "#41C9E2", fontSize: {
+                    xs: "0.8rem", 
+                    lg: "1rem"   
+                  }, }}>
+                  October'24 - present
+                </Typography>
+                <Typography sx={{ color: "#DFF5FF", fontSize: {
+                    xs: "0.7rem", 
+                    lg: "0.9rem"   
+                  }, }}>
+                  the CULT
+                </Typography>
+              </TimelineContent>
+            </TimelineItem>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={sectionVariants}
+            transition={{ duration: 1 }}
+          >
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{
+                  m: "auto 0",
+                  background: "linear-gradient(to right, #7c3aed, #4f46e5)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  fontSize: {
+                    xs: "1rem", 
+                    lg: "1.2rem"   
+                  },
+                }}
+                align="right"
+                variant="body2"
+              >
                 The Product House (TPHxSRMIST)
               </TimelineOppositeContent>
               <TimelineSeparator>
@@ -223,7 +280,7 @@ const Experience = () => {
                     xs: "0.8rem", 
                     lg: "1rem"   
                   }, }}>
-                  December'24 - present
+                  December'23 - present
                 </Typography>
                 <Typography sx={{ color: "#DFF5FF", fontSize: {
                     xs: "0.7rem", 
@@ -309,7 +366,7 @@ const Experience = () => {
             variants={sectionVariants}
             transition={{ duration: 1 }}
           >
-            <h1 className="relative z-10 text-lg md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mt-14">
+            <h1 className="relative z-10 text-lg md:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mt-10">
               Gallery
             </h1>
             <p className="text-center text-gray-500 text-[11px]">

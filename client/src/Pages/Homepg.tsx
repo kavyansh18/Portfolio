@@ -1258,7 +1258,7 @@ export function Homepg() {
       <div className="lg:mt-0 mt-60">
         <Experience />
       </div>
-      <div>
+      <div className="lg:mt-36 mt-40">
         <Gallary />
       </div>
       <div>
