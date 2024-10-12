@@ -5,7 +5,7 @@ import stackoverflow from "../assets/stack-overflow.jpeg";
 import todo from "../assets/todo.png";
 //import ams from "../assets/ams.jpeg";
 //import bnb from "../assets/beatsnbytes.png";
-import uc from "../assets/uc.png";
+import uc from "../assets/UC_New.png";
 import pp from "../assets/pp.png";
 import cc from "../assets/cc.png";
 import zk from "../assets/zk.png";

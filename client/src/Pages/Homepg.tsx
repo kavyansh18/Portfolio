@@ -37,7 +37,7 @@ import todo from "../assets/todo.png";
 //import ams from "../assets/ams.jpeg";
 import vite from "../assets/vite.svg";
 import zk from "../assets/zk.png";
-import uc from "../assets/uc.png";
+import uc from "../assets/UC_New.png";
 import pp from "../assets/pp.png";
 import cc from "../assets/cc.png";
 import java from "../assets/java.png";
