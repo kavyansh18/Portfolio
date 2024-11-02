@@ -47,7 +47,7 @@ const GithubCalender: React.FC<GitHubContributionGraphProps> = ({ username }) =>
     <div className="github-contribution-graph">
       <h2>GitHub Contribution Graph</h2>
       <div className="year-label">{currentYear}</div>
-      <div className="lg:scale-100 scale-75">
+      <div className="lg:scale-100 scale-[0.8]">
         <GitHubCalendar
           {...({
             username,
