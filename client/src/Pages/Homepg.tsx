@@ -142,7 +142,7 @@ export function Homepg() {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="text-4xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto lg:mt-0 mt-12"
+          className="text-4xl px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto lg:mt-0 mt-12"
         >
           <div className="flex justify-center items-center mb-4">
             <Pfp />
@@ -151,7 +151,7 @@ export function Homepg() {
             Hi, I'm Kavyansh{" "}
           </span>
           <br></br>
-          <Highlight className="text-black dark:text-white mt-1">
+          <Highlight className="text-white mt-1">
             A FullStack Web Developer
           </Highlight>
           <div className="w-full flex justify-center items-center lg:mt-12 mt-20">
@@ -237,8 +237,8 @@ export function Homepg() {
         </div>
       </HeroHighlight>
       {/* <ToggleSwitch /> */}
-      <div className="h-[76rem] w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="h-[76rem] w-full bg-black bg-grid-white/[0.2] relative">
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -1246,7 +1246,7 @@ export function Homepg() {
             <div className="w-full flex flex-wrap justify-center gap-6 mt-8">
               <NavLink to='/projects'>
                 <span className="absolute top-0 left-0 mt-1 ml-1 h-full rounded bg-red"></span>
-                <span className="fold-bold relative inline-block h-full rounded border-b-4 border-r-4 border-blue-300 bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-blue-800 hover:text-white">
+                <span className="fold-bold relative inline-block h-full rounded border-b-4 border-r-4 border-blue-300 bg-slate-500 px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-blue-800 hover:text-white">
                   View Projects
                 </span>
               </NavLink>
