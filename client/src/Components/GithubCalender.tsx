@@ -17,7 +17,7 @@ interface GitHubCalendarProps {
 
 const GithubCalender: React.FC<GitHubContributionGraphProps> = ({ username }) => {
   const currentYear = new Date().getFullYear();
-  const [blockSize, setBlockSize] = useState(9); // Default block size
+  const [blockSize, setBlockSize] = useState(9);
 
   // Function to filter contributions for the current year
   const transformData = (contributions: any) => {
@@ -27,7 +27,6 @@ const GithubCalender: React.FC<GitHubContributionGraphProps> = ({ username }) =>
     });
   };
 
-  // Update block size based on screen size
   useEffect(() => {
     const updateBlockSize = () => {
       if (window.innerWidth < 640) {
