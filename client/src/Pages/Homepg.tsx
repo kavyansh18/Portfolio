@@ -152,7 +152,7 @@ export function Homepg() {
           </span>
           <br></br>
           <Highlight className="text-white mt-1">
-            A FullStack Web Developer
+            A FullStack Web3 Developer
           </Highlight>
           <div className="w-full flex justify-center items-center lg:mt-12 mt-20">
             {bounce ? (
